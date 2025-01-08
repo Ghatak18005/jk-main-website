@@ -1,6 +1,5 @@
 import Image from "next/image";
 import { useEffect, useState } from "react";
-
 export default function Products() {
   const categoryData = [
     {
@@ -41,7 +40,64 @@ export default function Products() {
         }
       ]
     },
-    // ... Add more categories
+    {
+      title: "Power Drills",
+      description: "High-performance power drills for professional use",
+      imgSrc: "/products/white_img.png",
+      products: [
+        {
+          name: "Cordless Drill Pro",
+          imgSrc: "/products/white_img.png",
+        },
+        {
+          name: "Impact Drill Max",
+          imgSrc: "/products/white_img.png",
+        },
+        {
+          name: "Compact Drill Lite",
+          imgSrc: "/products/white_img.png",
+        }
+      ]
+    },
+    {
+      title: "Power Drills",
+      description: "High-performance power drills for professional use",
+      imgSrc: "/products/white_img.png",
+      products: [
+        {
+          name: "Cordless Drill Pro",
+          imgSrc: "/products/white_img.png",
+        },
+        {
+          name: "Impact Drill Max",
+          imgSrc: "/products/white_img.png",
+        },
+        {
+          name: "Compact Drill Lite",
+          imgSrc: "/products/white_img.png",
+        }
+      ]
+    },
+    {
+      title: "Power Drills",
+      description: "High-performance power drills for professional use",
+      imgSrc: "/products/white_img.png",
+      products: [
+        {
+          name: "Cordless Drill Pro",
+          imgSrc: "/products/white_img.png",
+        },
+        {
+          name: "Impact Drill Max",
+          imgSrc: "/products/white_img.png",
+        },
+        {
+          name: "Compact Drill Lite",
+          imgSrc: "/products/white_img.png",
+        }
+      ]
+    },
+    
   ];
 
   const [filteredCategories, setFilteredCategories] = useState(categoryData);
@@ -51,7 +107,7 @@ export default function Products() {
   const handleSearch = (event) => {
     const query = event.target.value.toLowerCase();
     const filtered = categoryData.filter((category) =>
-      category.title.toLowerCase().includes(query) || 
+      category.title.toLowerCase().includes(query) ||
       category.description.toLowerCase().includes(query)
     );
     setFilteredCategories(filtered);
@@ -77,77 +133,75 @@ export default function Products() {
   };
 
   return (
-    <div className="bg-[#DEEDEF] min-h-screen relative">
-      <nav className="bg-[#F2F9F9] h-14 sticky top-0 z-10">
-        <ul className="flex gap-24 text-2xl p-2 text-[#2E414B] font-normal">
-          <a href="/"><li className="hover:font-medium">Home</li></a>
-          <a href="/products"><li className="hover:font-medium">Product</li></a>
-          <a href="/services"><li className="hover:font-medium">Services</li></a>
-          <a href="/clients"><li className="hover:font-medium">Clients</li></a>
-          <a href="/certificates"><li className="hover:font-medium">Certificates</li></a>
-        </ul>
-      </nav>
+    <div className="bg-[#DEEDEF] min-h-screen overflow-hidden">
+      
 
       <div className={`p-6 transition-all duration-300 ${isOverlayVisible ? 'blur-sm' : ''}`}>
-        <div className="flex justify-center mb-6 bg-[#C0DBE1] rounded-full mx-64">
+        <div className="flex justify-center mb-6 bg-[#C0DBE1] rounded-full lg:mx-64 md:mx-32 mx-auto">
           <div className="relative flex w-full">
-            <button className="px-4 py-2">
-              <Image src="/products/hamburger.png" alt="Menu" width={24} height={24} />
+            <button className="px-2 py-2">
+              <Image src="/products/hamburger.svg" alt="Menu" width={56} height={56} />
             </button>
             <input
               type="text"
               onChange={handleSearch}
               placeholder="Search products..."
-              className="w-full px-4 py-2 bg-[#C0DBE1] focus:outline-none"
+              className="w-full py-2 bg-[#C0DBE1] focus:outline-none text-black"
             />
             <button className="px-4 py-2">
-              <Image src="/products/search_button.png" alt="Search" width={24} height={24} />
+              <Image src="/products/search.svg" alt="Search" width={56} height={56} />
             </button>
+
           </div>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3 lg:gap-6">
           {filteredCategories.map((category, index) => (
-            <div 
+            <div
               key={index}
-              className="bg-[#2D5F6B] text-white rounded-lg shadow-md overflow-hidden flex flex-col p-5 transform transition-transform hover:scale-105"
+              className="bg-[#2D5F6B] text-white rounded-lg shadow-md flex flex-col p-4 transform transition-transform "
             >
-              <Image 
-                src={category.imgSrc} 
-                alt={category.title} 
+              <Image
+                src={category.imgSrc}
+                alt={category.title}
                 width={300}
                 height={200}
-                className="object-cover rounded-lg"
+                className="object-cover w-full rounded-lg"
               />
-              <div className="pt-4">
-                <h3 className="text-[#DEEDEF] text-lg font-semibold mb-2">{category.title}</h3>
-                <p className="text-sm text-[#C0DBE1] mb-4">{category.description}</p>
-                <button 
-                  className="bg-[#EFAA00] text-[#2E414B] px-4 py-2 rounded-full w-full hover:bg-yellow-600 transition-colors"
-                  onClick={() => showOverlay(category)}
-                >
-                  Explore More
-                </button>
+              <div className="pt-4 flex-grow ">
+                <h3 className="text-[#DEEDEF] text-base md:text-lg font-semibold lg:mb-2 mb-1">
+                  {category.title}
+                </h3>
+                <p className="text-sm lg:text-base text-[#C0DBE1] lg:mb-4 mb-2">
+                  {category.description}
+                </p>
               </div>
+              <button
+                className="bg-[#EFAA00] text-[#2E414B] px-4 py-2 mx-auto rounded-full lg:w-full w-40 hover:bg-yellow-600 transition-colors lg:text-sm text-xs"
+                onClick={() => showOverlay(category)}
+              >
+                Explore More
+              </button>
             </div>
           ))}
         </div>
+
       </div>
 
       {isOverlayVisible && (
-        <div 
+        <div
           className="fixed inset-0 bg-black bg-opacity-70 z-20 flex items-center justify-center overlay-background"
           onClick={handleOverlayClick}
         >
           <div className="flex gap-6 p-4">
             {selectedCategory?.products.map((product, index) => (
-              <div 
+              <div
                 key={index}
                 className="w-80 h-96 bg-[#598088] rounded-lg flex flex-col justify-between p-4 shadow-md transform transition-transform hover:scale-105"
               >
                 <div className="text-center bg-[#C0DBE1] h-full rounded-lg p-4">
-                  <Image 
-                    src={product.imgSrc} 
+                  <Image
+                    src={product.imgSrc}
                     alt={product.name}
                     width={200}
                     height={200}
