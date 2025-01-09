@@ -46,7 +46,7 @@ export default function about() {
           </div>
           <div className="md:w-1/2">
             <h3 className="text-2xl font-semibold mb-4 text-[#2E414B]">
-              Jane Doe
+              Prit Desai
             </h3>
             <p className="text-lg text-gray-700 leading-relaxed">
               Jane Doe is a visionary leader with over 15 years of experience in
@@ -69,7 +69,7 @@ export default function about() {
           </div>
           <div className="md:w-1/2">
             <h3 className="text-2xl font-semibold mb-4 text-[#2E414B]">
-              John Smith
+              Mihir Gohil
             </h3>
             <p className="text-lg text-gray-700 leading-relaxed">
               John Smith brings a wealth of experience in product development

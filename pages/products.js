@@ -3,101 +3,106 @@ import { useEffect, useState } from "react";
 export default function Products() {
   const categoryData = [
     {
-      title: "Screwdrivers",
-      description: "Professional-grade screwdrivers for various applications",
-      imgSrc: "/products/white_img.png",
+      title: "Switchgear and Automation",
+      description: "Switchgear ensures safe power control and protection, while automation enhances efficiency and monitoring in electrical systems.",
+      imgSrc: "/products/head_img/head1.jpg",
       products: [
         {
           name: "Phillips Screwdriver",
-          imgSrc: "/products/white_img.png",
+          imgSrc: "/products/pro_img/img1.png",
         },
         {
           name: "Flathead Screwdriver",
-          imgSrc: "/products/white_img.png",
+          imgSrc: "/products/pro_img/img1.png",
         },
         {
           name: "Precision Screwdriver",
-          imgSrc: "/products/white_img.png",
+          imgSrc: "/products/pro_img/img1.png",
         }
       ]
     },
     {
-      title: "Power Drills",
-      description: "High-performance power drills for professional use",
-      imgSrc: "/products/white_img.png",
+      title: "Wires and Cables",
+      description: "Wires and cables are essential for transmitting electrical power and signals, offering reliable and durable connections for diverse applications in industries, homes, and infrastructure.",
+      imgSrc: "/products/head_img/head2.jpg",
       products: [
         {
           name: "Cordless Drill Pro",
-          imgSrc: "/products/white_img.png",
+          imgSrc: "/products/pro_img/img1.png",
         },
         {
           name: "Impact Drill Max",
-          imgSrc: "/products/white_img.png",
+          imgSrc: "/products/pro_img/img1.png",
         },
         {
           name: "Compact Drill Lite",
-          imgSrc: "/products/white_img.png",
+          imgSrc: "/products/pro_img/img1.png",
         }
       ]
     },
     {
-      title: "Power Drills",
-      description: "High-performance power drills for professional use",
-      imgSrc: "/products/white_img.png",
+      title: "Industrial Light",
+      description: "Industrial lights provide bright, energy-efficient illumination for large-scale environments, enhancing safety and productivity.",
+      imgSrc: "/products/head_img/head3.jpg",
       products: [
         {
           name: "Cordless Drill Pro",
-          imgSrc: "/products/white_img.png",
+          imgSrc: "/products/pro_img/img1.png",
         },
         {
           name: "Impact Drill Max",
-          imgSrc: "/products/white_img.png",
+          imgSrc: "/products/pro_img/img1.png",
         },
         {
           name: "Compact Drill Lite",
-          imgSrc: "/products/white_img.png",
+          imgSrc: "/products/pro_img/img1.png",
+        },
+        {
+          name: "Impact Drill Max",
+          imgSrc: "/products/pro_img/img1.png",
+        },
+        {
+          name: "Compact Drill Lite",
+          imgSrc: "/products/pro_img/img1.png",
+        },
+        {
+          name: "Impact Drill Max",
+          imgSrc: "/products/pro_img/img1.png",
+        },
+        {
+          name: "Compact Drill Lite",
+          imgSrc: "/products/pro_img/img1.png",
+        },
+        {
+          name: "Impact Drill Max",
+          imgSrc: "/products/pro_img/img1.png",
+        },
+        {
+          name: "Compact Drill Lite",
+          imgSrc: "/products/pro_img/img1.png",
         }
       ]
     },
     {
-      title: "Power Drills",
-      description: "High-performance power drills for professional use",
-      imgSrc: "/products/white_img.png",
+      title: "Cable Tray",
+      description: "A cable tray is a support system used to organize and protect electrical cables, ensuring safe and efficient cable management in industrial and commercial settings.",
+      imgSrc: "/products/head_img/head4.jpg",
       products: [
         {
           name: "Cordless Drill Pro",
-          imgSrc: "/products/white_img.png",
+          imgSrc: "/products/pro_img/img1.png",
         },
         {
           name: "Impact Drill Max",
-          imgSrc: "/products/white_img.png",
+          imgSrc: "/products/pro_img/img1.png",
         },
         {
           name: "Compact Drill Lite",
-          imgSrc: "/products/white_img.png",
+          imgSrc: "/products/pro_img/img1.png",
         }
       ]
     },
-    {
-      title: "Power Drills",
-      description: "High-performance power drills for professional use",
-      imgSrc: "/products/white_img.png",
-      products: [
-        {
-          name: "Cordless Drill Pro",
-          imgSrc: "/products/white_img.png",
-        },
-        {
-          name: "Impact Drill Max",
-          imgSrc: "/products/white_img.png",
-        },
-        {
-          name: "Compact Drill Lite",
-          imgSrc: "/products/white_img.png",
-        }
-      ]
-    },
-    
+
   ];
 
   const [filteredCategories, setFilteredCategories] = useState(categoryData);
@@ -134,7 +139,7 @@ export default function Products() {
 
   return (
     <div className="bg-[#DEEDEF] min-h-screen overflow-hidden">
-      
+
 
       <div className={`p-6 transition-all duration-300 ${isOverlayVisible ? 'blur-sm' : ''}`}>
         <div className="flex justify-center mb-6 bg-[#C0DBE1] rounded-full lg:mx-64 md:mx-32 mx-auto">
@@ -155,19 +160,22 @@ export default function Products() {
           </div>
         </div>
 
-        <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3 lg:gap-6">
+        <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 lg:gap-6">
           {filteredCategories.map((category, index) => (
             <div
               key={index}
-              className="bg-[#2D5F6B] text-white rounded-lg shadow-md flex flex-col p-4 transform transition-transform "
+              className="bg-[#2D5F6B] text-white rounded-lg shadow-md flex flex-col p-4 transform transition-transform"
             >
-              <Image
-                src={category.imgSrc}
-                alt={category.title}
-                width={300}
-                height={200}
-                className="object-cover w-full rounded-lg"
-              />
+              <div className="relative w-full h-64 rounded-lg overflow-hidden">
+                <Image
+                  src={category.imgSrc}
+                  alt={category.title}
+                  layout="fill"        
+                  objectFit="cover"    
+                  className="rounded-lg"
+                />
+              </div>
+
               <div className="pt-4 flex-grow ">
                 <h3 className="text-[#DEEDEF] text-base md:text-lg font-semibold lg:mb-2 mb-1">
                   {category.title}
@@ -177,7 +185,8 @@ export default function Products() {
                 </p>
               </div>
               <button
-                className="bg-[#EFAA00] text-[#2E414B] px-4 py-2 mx-auto rounded-full lg:w-full w-40 hover:bg-yellow-600 transition-colors lg:text-sm text-xs"
+                className="bg-[#EFAA00] text-[#2E414B] px-4 py-2 mx-auto rounded-full lg:w-3/4 w-3/4 hover:bg-yellow-600 transition-colors lg:text-sm text-xs
+              "
                 onClick={() => showOverlay(category)}
               >
                 Explore More
@@ -185,35 +194,44 @@ export default function Products() {
             </div>
           ))}
         </div>
-
       </div>
 
       {isOverlayVisible && (
-        <div
-          className="fixed inset-0 bg-black bg-opacity-70 z-20 flex items-center justify-center overlay-background"
-          onClick={handleOverlayClick}
-        >
-          <div className="flex gap-6 p-4">
-            {selectedCategory?.products.map((product, index) => (
-              <div
-                key={index}
-                className="w-80 h-96 bg-[#598088] rounded-lg flex flex-col justify-between p-4 shadow-md transform transition-transform hover:scale-105"
-              >
-                <div className="text-center bg-[#C0DBE1] h-full rounded-lg p-4">
-                  <Image
-                    src={product.imgSrc}
-                    alt={product.name}
-                    width={200}
-                    height={200}
-                    className="mx-auto mb-4 rounded-lg"
-                  />
-                </div>
-                <div className="text-[#DEEDEF] text-center py-2 text-xl">{product.name}</div>
-              </div>
-            ))}
+      <div
+      className="fixed inset-0 bg-black bg-opacity-70 z-20 flex items-center justify-center overlay-background"
+      onClick={handleOverlayClick}
+    >
+      <button
+        className="absolute top-14 lg:top-12 right-6 lg:right-32 bg-[#EFAA00] text-[#2E414B] rounded-full px-2 py-1 lg:px-4 lg:py-2 hover:bg-yellow-600 transition-colors z-10"
+        onClick={hideOverlay}
+      >
+        ✕
+      </button>
+    
+      <div className="relative max-h-[75vh] lg:max-h-[80vh] overflow-y-auto grid grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 p-4 bg-[#2D5F6B] rounded-lg shadow-md w-5/6 lg:w-3/4 ">
+        {selectedCategory?.products.map((product, index) => (
+          <div
+            key={index}
+            className="w-full bg-[#598088] rounded-lg flex flex-col justify-between lg:p-6 p-3 shadow-md transform transition-transform"
+          >
+            <div className="text-center h-full rounded-lg lg:p-2 p-1">
+              <Image
+                src={product.imgSrc}
+                alt={product.name}
+                width={200}
+                height={200}
+                className="mx-auto mb-2 lg:mb-4 rounded-lg"
+              />
+            </div>
+            <div className="text-[#DEEDEF] text-center py-0 lg:py-2 lg:text-xl text-sm">{product.name}</div>
           </div>
-        </div>
+        ))}
+      </div>
+    </div>
+    
+     
       )}
+
     </div>
   );
 }

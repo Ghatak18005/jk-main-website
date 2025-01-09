@@ -10,9 +10,17 @@
   },
   "dependencies": {
     "autoprefixer": "^10.4.20",
+    "card": "^2.5.4",
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
+    "framer-motion": "^11.16.4",
+    "lucide-react": "^0.469.0",
     "next": "15.1.4",
+    "prop-types": "^15.8.1",
     "react": "^19.0.0",
-    "react-dom": "^19.0.0"
+    "react-dom": "^19.0.0",
+    "tailwind-merge": "^2.6.0",
+    "tailwindcss-animate": "^1.0.7"
   },
   "devDependencies": {
     "postcss": "^8.4.49",
