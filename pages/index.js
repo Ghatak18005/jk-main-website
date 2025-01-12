@@ -1,7 +1,6 @@
-import { motion } from 'framer-motion';
+import { motion } from "framer-motion";
 import Image from "next/image";
 import { useInView } from "react-intersection-observer";
-
 
 export default function HeroAndAbout() {
   const [ref, inView] = useInView({
@@ -117,13 +116,6 @@ export default function HeroAndAbout() {
                     height={200}
                     className="mx-auto rounded-lg lg:block hidden"
                   />
-                  <Image
-                    src="/h1.png"
-                    alt="Service 1"
-                    width={250}
-                    height={100}
-                    className="mx-auto rounded-lg block lg:hidden"
-                  />
                 </div>
                 <h3 className="lg:text-xl text-base font-semibold text-gray-900 mb-2 text-center">
                   - Electrical Contracting Service <br />
@@ -131,8 +123,6 @@ export default function HeroAndAbout() {
                 </h3>
               </div>
             </div>
-
-            {/* Second Service */}
             <div className="overflow-hidden rounded-xl transition-transform transform border-4 border-[#BD7500]">
               <div className="lg:px-5 lg:py-4 p-2">
                 <div className="mb-4">
@@ -232,7 +222,9 @@ export default function HeroAndAbout() {
             <motion.h2
               ref={ref}
               initial={{ opacity: 0, scale: 0.8 }}
-              animate={inView ? { opacity: 1, scale: 1 } : { opacity: 1, scale: 0.8 }}
+              animate={
+                inView ? { opacity: 1, scale: 1 } : { opacity: 1, scale: 0.8 }
+              }
               className="lg:text-3xl text-xl font-bold text-[#2E414B] lg:mb-12 mb-7 bg-[#C0DBE1] py-7 rounded-2xl lg:w-2/6 w-2/3 m-auto"
             >
               OUR AREA OF WORK
@@ -254,7 +246,10 @@ export default function HeroAndAbout() {
             </motion.div>
           </motion.div>
 
-          <div className="flex flex-wrap justify-center lg:mb-12 mb-7" ref={ref}>
+          <div
+            className="flex flex-wrap justify-center lg:mb-12 mb-7"
+            ref={ref}
+          >
             {Array.from({ length: 4 }).map((_, index) => (
               <motion.div
                 key={index}
@@ -275,6 +270,172 @@ export default function HeroAndAbout() {
           </div>
         </div>
       </section>
+      <section className="lg:py-12 px-7 py-6 lg:px-8">
+        <div className="max-w-7xl mx-auto text-center">
+          <h2 className="lg:text-3xl text-xl font-bold text-[#2E414B] lg:mb-12 mb-7 bg-[#C0DBE1] py-2 rounded-2xl lg:w-5/12 w-2/3 mx-auto">
+            VISSON MISSION
+          </h2>
+          <div className="grid grid-cols-1 md:grid-cols-4 lg:gap-8 gap-4">
+            {/* First Service */}
+            <div className="overflow-hidden rounded-xl transition-transform transform border-4 border-[#BD7500]">
+              <div className="lg:px-5 lg:py-4 p-2">
+                <div className="mb-2">
+                  <Image
+                    src="/vission1.png"
+                    alt="Service 1"
+                    width={150}
+                    height={150}
+                    className="mx-auto rounded-lg lg:block hidden mb-10"
+                  />
+                </div>
+                <h3 className="lg:text-lg text-base font-semibold text-gray-900 mb-2 text-center">
+                  Establish leadership in electrical solutions in a rapidly
+                  growing India.
+                </h3>
+              </div>
+            </div>
+            <div className="overflow-hidden rounded-xl transition-transform transform border-4 border-[#BD7500]">
+              <div className="lg:px-5 lg:py-4 p-2">
+                <div className="mb-2">
+                  <Image
+                    src="/vission2.png"
+                    alt="Service 1"
+                    width={150}
+                    height={150}
+                    className="mx-auto rounded-lg lg:block hidden mb-10"
+                  />
+                </div>
+                <h3 className="lg:text-lg text-base font-semibold text-gray-900 mb-2 text-center">
+                  Set industry standards for quality, innovation, and customer
+                  satisfaction.
+                </h3>
+              </div>
+            </div>
+            <div className="overflow-hidden rounded-xl transition-transform transform border-4 border-[#BD7500]">
+              <div className="lg:px-5 lg:py-4 p-2">
+                <div className="mb-4">
+                  <Image
+                    src="/vission3.png"
+                    alt="Service 2"
+                    width={150}
+                    height={150}
+                    className="mx-auto rounded-lg lg:block hidden mb-10"
+                  />
+                </div>
+                <h3 className="lg:text-lg text-base font-semibold text-gray-900 mb-2 text-center">
+                  Deliver innovative and reliable electrical solutions to
+                  industries and enterprises.
+                </h3>
+              </div>
+            </div>
+            <div className="overflow-hidden rounded-xl transition-transform transform border-4 border-[#BD7500]">
+              <div className="lg:px-5 lg:py-4 p-2">
+                <div className="mb-4">
+                  <Image
+                    src="/vission4.png"
+                    alt="Service 3"
+                    width={150}
+                    height={150}
+                    className="mx-auto rounded-lg lg:block hidden mb-10"
+                  />
+                </div>
+                <h3 className="lg:text-lg text-base font-semibold text-gray-900 mb-2 text-center">
+                  Enhance safety, efficiency, and sustainability, contributing
+                  to a prosperous India.
+                </h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div className="text-center">
+          <h2 className="lg:text-3xl text-xl font-bold text-[#2E414B] lg:mb-12 mb-7 bg-[#C0DBE1] py-2 rounded-2xl lg:w-5/12 w-2/3 mx-auto">
+            OUR CLIENTS
+          </h2>
+        </div>
+      </section>
+      <footer className="w-full bg-[#125767]">
+        <div className="text-[#DEEDEF] py-8 px-6">
+          <div className="flex flex-col items-center mb-8">
+            <Image
+              src="/jk_footer.png"
+              alt="Logo"
+              width={112}
+              height={112}
+              className="mb-4"
+            />
+            <h1 className="text-3xl font-semibold tracking-wide">
+              JK POWER SYSTEM
+            </h1>
+          </div>
+
+          <div className="flex flex-col md:flex-row">
+            <div className="flex-1 px-10">
+              <div className="mb-10">
+                <p className="text-2xl leading-10">
+                  FF-107 ATRIA-2 OPP. SHREYAS SCHOOL NR.DAWAT RESTAURANT,
+                  MANJALPUR, VADODARA-390011
+                </p>
+              </div>
+
+              <div className="flex items-center mb-3">
+                <Image src="/phone.png" alt="Phone" width={24} height={24} />
+                <p className="text-3xl pl-5">8320072668 / 7016932856</p>
+              </div>
+
+              <div className="flex items-center mb-5">
+                <Image src="/mail.png" alt="Mail" width={24} height={24} />
+                <p className="text-3xl pl-5">jkpowersystem99@gmail.com</p>
+              </div>
+
+              <div className="flex space-x-10">
+                <a href="#">
+                  <Image
+                    src="/instagram.png"
+                    alt="Instagram"
+                    width={24}
+                    height={24}
+                  />
+                </a>
+                <a href="#">
+                  <Image
+                    src="/linkedin.png"
+                    alt="LinkedIn"
+                    width={24}
+                    height={24}
+                  />
+                </a>
+                <a href="#">
+                  <Image
+                    src="/facebook.png"
+                    alt="Facebook"
+                    width={24}
+                    height={24}
+                  />
+                </a>
+                <a href="#">
+                  <Image
+                    src="/x.png"
+                    alt="X (Twitter)"
+                    width={24}
+                    height={24}
+                  />
+                </a>
+              </div>
+            </div>
+
+            <div className="flex-1 mt-8 md:mt-0 md:justify-center">
+              <iframe
+                className="w-full h-80 md:h-full rounded-lg shadow-lg"
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3692.0046815516084!2d73.1966131!3d22.2778125!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395fc58250393a0d%3A0xcf7edc53c8636367!2sAtria%20Complex!5e0!3m2!1sen!2sin!4v1734245432820!5m2!1sen!2sin"
+                allowFullScreen=""
+                loading="lazy"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </footer>
     </div>
   );
 }
