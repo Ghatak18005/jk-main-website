@@ -50,15 +50,15 @@ export default function HeroAndAbout() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
           >
-            <Image
-              src="/hero2.jpg"
+            {/* <Image
+              src="/.jpg"
               alt="Hero Image"
               width={600}
               height={900}
               objectFit="cover"
               layout="responsive"
               className="lg:block hidden"
-            />
+            /> */}
           </motion.div>
 
           <motion.div
@@ -66,8 +66,8 @@ export default function HeroAndAbout() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.3 }}
           >
-            <Image
-              src="/hero2.jpg"
+            {/* <Image
+              src="/.jpg"
               alt="Hero Image"
               width={600}
               height={900}
@@ -77,7 +77,7 @@ export default function HeroAndAbout() {
                 aspectRatio: "1",
               }}
               className="lg:hidden block"
-            />
+            /> */}
           </motion.div>
         </div>
 
@@ -96,7 +96,7 @@ export default function HeroAndAbout() {
             >
               <div className="mb-0">
                 <Image
-                  src="/JK-LOGO.png"
+                  src="/JK-LOGO.jpeg"
                   alt="JK POWER SYSTEM LOGO"
                   width={100}
                   height={100}
@@ -128,7 +128,7 @@ export default function HeroAndAbout() {
               transition={{ duration: 1 }}
             >
               <motion.img
-                src="/hero2.jpg"
+                src="/home/hero2.jpg"
                 alt="About Company"
                 width={800}
                 height={1200}
@@ -202,7 +202,7 @@ export default function HeroAndAbout() {
                 What We Do ?
               </h2>
               <motion.img
-                src="/hero2.jpg"
+                src="/home/hero2.jpg"
                 alt="About Company"
                 width={800}
                 height={1200}
@@ -262,8 +262,6 @@ export default function HeroAndAbout() {
       </section>
 
       <section className="lg:py-12 px-7 py-6 lg:px-8">
-        import {motion} from 'framer-motion';
-        import Image from 'next/image';
 
         <div className="max-w-7xl mx-auto text-center">
           <h2 className="lg:text-3xl text-xl font-bold text-[#2E414B] lg:mb-12 mb-7 bg-[#C0DBE1] py-2 rounded-2xl lg:w-3/12 w-3/4 mx-auto">
@@ -307,7 +305,7 @@ export default function HeroAndAbout() {
               <div className="lg:px-5 lg:py-4 p-2">
                 <div className="mb-4">
                   <Image
-                    src="/h2.png"
+                    src="/home/h4.png"
                     alt="Service 2"
                     width={300}
                     height={200}
@@ -565,6 +563,7 @@ export default function HeroAndAbout() {
       <section className="lg:py-0 px-7 py-6 lg:px-8">
         <VisionMission />
       </section>
+
       <section>
 
         <div className="text-center">
@@ -580,7 +579,7 @@ export default function HeroAndAbout() {
           <div className="flex flex-col md:flex-row md:space-x-10">
             <div className="flex-1 mb-8 md:mb-0 text-center md:text-left">
               <Image
-                src="/JK-LOGO.png"
+                src="/JK-LOGO.jpeg"
                 alt="Logo"
                 width={112}
                 height={112}
@@ -701,20 +700,24 @@ export default function HeroAndAbout() {
                     height={24}
                   />
                   <p className="text-bae pl-2 hover:underline hover:text-[#BD7500] cursor-pointer">
-                    FF-107 ATRIA-2 OPP. SHREYAS SCHOOL NR.DAWAT RESTAURANT,
-                    MANJALPUR, VADODARA-390011
+                    Office No: 401 &  Mangla Trade Hub, Nr. Billabong School, Vadsar Ring Road, Vadodara, Gujarat 390012
                   </p>
                 </div>
               </div>
 
               <div className="flex-1 mt-8 md:mt-0 md:justify-center w-full h-60">
                 <iframe
-                  className="w-full h-full md:h-full rounded-lg shadow-lg"
-                  src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3692.0046815516084!2d73.1966131!3d22.2778125!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395fc58250393a0d%3A0xcf7edc53c8636367!2sAtria%20Complex!5e0!3m2!1sen!2sin!4v1734245432820!5m2!1sen!2sin"
-                  allowFullScreen=""
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3692.4127140376154!2d73.16788007474827!3d22.262350844270948!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395fc731ee762685%3A0x7066ca4dd82bd16c!2sMangla%20Trade%20Hub!5e0!3m2!1sen!2sin!4v1736791453900!5m2!1sen!2sin"
+                  width="600"
+                  height="450"
+                  style={{ border: 0 }} // Corrected style object
+                  allowFullScreen
                   loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                  className="w-full h-full md:h-full rounded-lg shadow-lg"
                 ></iframe>
               </div>
+
             </div>
 
           </div>

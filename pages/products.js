@@ -10,33 +10,33 @@ export default function Products() {
         "Switchgear ensures safe power control and protection, while automation enhances efficiency and monitoring in electrical systems.",
       imgSrc: "/products/head/switchgear.png",
       products: [
-        { name: "ACB", imgSrc: "/products/sub/img1.png" },
-        { name: "MCB", imgSrc: "/products/sub/img1.png" },
-        { name: "DB", imgSrc: "/products/sub/img1.png" },
-        { name: "MCCB", imgSrc: "/products/sub/img1.png" },
-        { name: "RCCB", imgSrc: "/products/sub/img1.png" },
-        { name: "Contactor", imgSrc: "/products/sub/img1.png" },
-        { name: "MPCB", imgSrc: "/products/sub/img1.png" },
-        { name: "Capacitor", imgSrc: "/products/sub/img1.png" },
-        { name: "Relays", imgSrc: "/products/sub/img1.png" },
-        { name: "Starter", imgSrc: "/products/sub/img1.png" },
-        { name: "Fuse", imgSrc: "/products/sub/img1.png" },
-        { name: "Switch Disconnectors", imgSrc: "/products/sub/img1.png" },
-        { name: "Push Buttons", imgSrc: "/products/sub/img1.png" },
-        { name: "Change Over Switches", imgSrc: "/products/sub/img1.png" },
+        { name: "ACB", imgSrc: "/products/sub/sub1/img1.png" },
+        { name: "MCB", imgSrc: "/products/sub/sub1/img2.png" },
+        { name: "DB", imgSrc: "/products/sub/sub1/img3.png" },
+        { name: "MCCB", imgSrc: "/products/sub/sub1/img4.png" },
+        { name: "RCCB", imgSrc: "/products/sub/sub1/img5.png" },
+        { name: "Contactor", imgSrc: "/products/sub/sub1/img6.png" },
+        { name: "MPCB", imgSrc: "/products/sub/sub1/img7.png" },
+        { name: "Capacitor", imgSrc: "/products/sub/sub1/img8.png" },
+        { name: "Relays", imgSrc: "/products/sub/sub1/img9.png" },
+        { name: "Starter", imgSrc: "/products/sub/sub1/img10.png" },
+        { name: "Fuse", imgSrc: "/products/sub/sub1/img11.png" },
+        { name: "Switch Disconnectors", imgSrc: "/products/sub/sub1/img12.png" },
+        { name: "Push Buttons", imgSrc: "/products/sub/sub1/img13.png" },
+        { name: "Change Over Switches", imgSrc: "/products/sub/sub1/img14.png" },
         {
           name: "Electronic Overcurrent Relays",
-          imgSrc: "/products/sub/img1.png",
+          imgSrc: "/products/sub/sub1/img15.png",
         },
-        { name: "Terminals", imgSrc: "/products/sub/img1.png" },
-        { name: "Limit Switches", imgSrc: "/products/sub/img1.png" },
-        { name: "Meters", imgSrc: "/products/sub/img1.png" },
+        { name: "Terminals", imgSrc: "/products/sub/sub1/img16.png" },
+        { name: "Limit Switches", imgSrc: "/products/sub/sub1/img17.png" },
+        { name: "Meters", imgSrc: "/products/sub/sub1/img18.png" },
         {
           name: "Surge Protection Devices",
-          imgSrc: "/products/sub/img1.png",
+          imgSrc: "/products/sub/sub1/img19.png",
         },
-        { name: "Plugs & Sockets", imgSrc: "/products/sub/img1.png" },
-        { name: "VFD", imgSrc: "/products/sub/img1.png" },
+        { name: "Plugs & Sockets", imgSrc: "/products/sub/sub1/img20.png" },
+        { name: "VFD", imgSrc: "/products/sub/sub1/img21.png" },
       ],
     },
     {
@@ -47,51 +47,56 @@ export default function Products() {
       products: [
         {
           name: "Copper & Aluminium Armoured Cables",
-          imgSrc: "/products/sub/img1.png",
+          imgSrc: "/products/sub/sub2/img1.png",
         },
         {
           name: "Multicore Flexible Cables",
-          imgSrc: "/products/sub/img1.png",
+          imgSrc: "/products/sub/sub2/img2.png",
         },
-        { name: "High Tension Cables", imgSrc: "/products/sub/img1.png" },
-        { name: "CCTV Cable", imgSrc: "/products/sub/img1.png" },
-        { name: "Coxial Cables", imgSrc: "/products/sub/img1.png" },
-        { name: "JFTC Cable", imgSrc: "/products/sub/img1.png" },
-        { name: "LAN Cable", imgSrc: "/products/sub/img1.png" },
+        { name: "High Tension Cables", imgSrc: "/products/sub/sub2/img3.png" },
+        { name: "CCTV Cable", imgSrc: "/products/sub/sub2/img4.png" },
+        { name: "Coxial Cables", imgSrc: "/products/sub/sub2/img5.png" },
+        { name: "JFTC Cable", imgSrc: "/products/sub/sub2/img6.png" },
+        { name: "LAN Cable", imgSrc: "/products/sub/sub2/img7.png" },
+        { name: "Single Core Flexible Cables", imgSrc: "/products/sub/sub2/img8.png" },
+        { name: "Speaker Cables", imgSrc: "/products/sub/sub2/img9.png" },
+        { name: "Submersible Cables", imgSrc: "/products/sub/sub2/img10.png" },
+        { name: "Telephone Switchboard Cables", imgSrc: "/products/sub/sub2/img11.png" },
+        { name: "Braided Cables", imgSrc: "/products/sub/sub2/img12.png" },
+        { name: "Fire Survival Cables", imgSrc: "/products/sub/sub2/img13.png" },
+        { name: "Welding Cables", imgSrc: "/products/sub/sub2/img14.png" },
       ],
     },
     {
       title: "Industrial Light",
       description:
         "Industrial lights provide bright, energy-efficient illumination for large-scale environments, enhancing safety and productivity.",
-      imgSrc: "/products/head/industrial.jpg",
+      imgSrc: "/products/head/well.jpg",
       products: [
-        { name: "High Bay Light", imgSrc: "/products/sub/img1.png" },
-        { name: "Well Glass", imgSrc: "/products/sub/img1.png" },
-        { name: "High Bay - Canopy", imgSrc: "/products/sub/img1.png" },
-        { name: "Standard Baselight", imgSrc: "/products/sub/img1.png" },
-        { name: "Linear Light", imgSrc: "/products/sub/img1.png" },
+        { name: "High Bay Light", imgSrc: "/products/sub/sub3/img1.jpg" },
+        { name: "Well Glass", imgSrc: "/products/sub/sub3/img2.png" },
+        { name: "High Bay - Canopy", imgSrc: "/products/sub/sub3/img3.png" },
+        { name: "Standard Baselight", imgSrc: "/products/sub/sub3/img4.png" },
+        { name: "Linear Light", imgSrc: "/products/sub/sub3/img5.png" },
         {
           name: "System Ceiling Baselight",
-          imgSrc: "/products/sub/img1.png",
+          imgSrc: "/products/sub/sub3/img6.png",
         },
-        { name: "Cleanroom Baselight", imgSrc: "/products/sub/img1.png" },
-        { name: "Industrial Battern", imgSrc: "/products/sub/img1.png" },
+        { name: "Cleanroom Baselight", imgSrc: "/products/sub/sub3/img7.png" },
+        { name: "Industrial Battern", imgSrc: "/products/sub/sub3/img8.png" },
         {
           name: "Downlight Surface Mounted",
-          imgSrc: "/products/sub/img1.png",
+          imgSrc: "/products/sub/sub3/img9.png",
         },
-        { name: "Panel Light", imgSrc: "/products/sub/img1.png" },
-        { name: "Street Light", imgSrc: "/products/sub/img1.png" },
-        { name: "Suspended Light", imgSrc: "/products/sub/img1.png" },
-        { name: "Floodlight", imgSrc: "/products/sub/img1.png" },
-        { name: "Bollard Light", imgSrc: "/products/sub/img1.png" },
-        { name: "Bulkhead Light", imgSrc: "/products/sub/img1.png" },
-        { name: "Trunking Light", imgSrc: "/products/sub/img1.png" },
-        { name: "FLP Well Glass Light", imgSrc: "/products/sub/img1.png" },
-        { name: "FLP Well Glass Light", imgSrc: "/products/sub/img1.png" },
-        { name: "FLP Hand Lamp", imgSrc: "/products/sub/img1.png" },
-        { name: "FLP Floodlight", imgSrc: "/products/sub/img1.png" },
+        { name: "Panel Light", imgSrc: "/products/sub/sub3/img10.png" },
+        { name: "Suspended Light", imgSrc: "/products/sub/sub3/img12.png" },
+        { name: "Floodlight", imgSrc: "/products/sub/sub3/img13.png" },
+        { name: "Bollard Light", imgSrc: "/products/sub/sub3/img14.png" },
+        { name: "Bulkhead Light", imgSrc: "/products/sub/sub3/img15.png" },
+        { name: "Trunking Light", imgSrc: "/products/sub/sub3/img16.png" },
+        { name: "FLP Well Glass Light", imgSrc: "/products/sub/sub3/img17.png" },
+        { name: "FLP Hand Lamp", imgSrc: "/products/sub/sub3/img19.png" },
+        { name: "FLP Floodlight", imgSrc: "/products/sub/sub3/img20.png" },
       ],
     },
     {
@@ -127,34 +132,35 @@ export default function Products() {
         "A cable tray organizes and supports electrical cables, protecting them from damage and simplifying installation and maintenance.",
       imgSrc: "/products/head/cabletray.jpg",
       products: [
-        { name: "Perforated Cable Tray", imgSrc: "/products/sub/img1.png" },
-        { name: "Ladder Cable Tray", imgSrc: "/products/sub/img1.png" },
-        { name: "Raceway Cable Tray", imgSrc: "/products/sub/img1.png" },
+        { name: "Perforated Cable Tray", imgSrc: "/products/sub/sub5/img1.png" },
+        { name: "Ladder Cable Tray", imgSrc: "/products/sub/sub5/img2.png" },
+        { name: "Wire Mesh Cable Tray", imgSrc: "/products/sub/sub5/img3.png" },
+        {
+          name: "Raceway Cable Tray",
+          imgSrc: "/products/sub/sub5/img4.png",
+        },
         {
           name: "Embossed Perforated Cable Tray",
-          imgSrc: "/products/sub/img1.png",
+          imgSrc: "/products/sub/sub5/img5.png",
         },
         {
           name: "Heavy Duty Ladder Cable Tray",
-          imgSrc: "/products/sub/img1.png",
+          imgSrc: "/products/sub/sub5/img6.png",
         },
         {
+          
           name: "FRP Perforated Cable Tray",
-          imgSrc: "/products/sub/img1.png",
+          imgSrc: "/products/sub/sub5/img7.png",
         },
-        { name: "FRP Ladder Cable Tray", imgSrc: "/products/sub/img1.png" },
+        { name: "FRP Ladder Cable Tray", imgSrc: "/products/sub/sub5/img8.png" },
         {
-          name: "FRP Moulded & Pultruded",
-          imgSrc: "/products/sub/img1.png",
+          name: "FRP Moulded & Pultruded Gratings",
+          imgSrc: "/products/sub/sub5/img9.png",
         },
-        {
-          name: "Polygonal or Octagonal Lighting Poles",
-          imgSrc: "/products/sub/img1.png",
-        },
-        { name: "Swaged Lighting Poles", imgSrc: "/products/sub/img1.png" },
-        { name: "Conical Poles", imgSrc: "/products/sub/img1.png" },
-        { name: "High Mast Poles", imgSrc: "/products/sub/img1.png" },
-        { name: "Flag Mast Pole", imgSrc: "/products/sub/img1.png" },
+        { name: "Polygonial or Octagonal Lighting Poles", imgSrc: "/products/sub/sub5/img10.png" },
+        { name: "Swaged Lighting Poles", imgSrc: "/products/sub/sub5/img11.png" },
+        { name: "Conical Poles", imgSrc: "/products/sub/sub5/img11.png" },
+        { name: "High Mast Pole", imgSrc: "/products/sub/sub5/img13.png" },
       ],
     },
     {
@@ -246,7 +252,7 @@ export default function Products() {
       title: "Earthing",
       description:
         "Earthing ensures safety by connecting electrical systems to the ground, preventing electrical shocks, equipment damage, and fire hazards during faults.",
-      imgSrc: "/products/head/earthing.png",
+      imgSrc: "/products/head/earth.png",
       products: [
         {
           name: "Copper Bonded Grounding Rods",
@@ -428,7 +434,7 @@ export default function Products() {
       <AnimatePresence>
         {isOverlayVisible && (
           <motion.div
-            className="fixed inset-0 bg-black bg-opacity-70 z-20 flex items-center justify-center overlay-background"
+            className="fixed inset-0 bg-black bg-opacity-70 z-20 flex items-center justify-center overlay-background "
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
@@ -454,9 +460,9 @@ export default function Products() {
                     alt={product.name}
                     width={200}
                     height={200}
-                    className="mx-auto mb-2 lg:mb-4 rounded-lg"
+                    className="mx-auto mb-2 lg:mb-4 rounded-lg flex flex-grow"
                   />
-                  <div className="text-[#DEEDEF] text-center py-0 lg:py-2 lg:text-xl text-sm flex-grow">
+                  <div className="text-[#DEEDEF] text-center py-0 lg:py-2 lg:text-xl text-sm ">
                     {product.name}
                   </div>
                 </div>
