@@ -107,23 +107,23 @@ export default function Products() {
       products: [
         {
           name: "3Phase Induction Motor",
-          imgSrc: "/products/sub/img1.png",
+          imgSrc: "/products/sub/sub4/img1.png",
         },
-        { name: "Servo Motor", imgSrc: "/products/sub/img1.png" },
+        { name: "Servo Motor", imgSrc: "/products/sub/sub4/img2.png" },
         {
           name: "Worm Reduction Gearbox",
-          imgSrc: "/products/sub/img1.png",
+          imgSrc: "/products/sub/sub4/img3.png",
         },
         {
           name: "Inline Helical Gearbox",
-          imgSrc: "/products/sub/img1.png",
+          imgSrc: "/products/sub/sub4/img4.png",
         },
-        { name: "Bevel Helical Gearbox", imgSrc: "/products/sub/img1.png" },
+        { name: "Bevel Helical Gearbox", imgSrc: "/products/sub/sub4/img5.png" },
         {
           name: "Parallel Helical Gearbox",
-          imgSrc: "/products/sub/img1.png",
+          imgSrc: "/products/sub/sub4/img6.jpg",
         },
-        { name: "Motor Canopy", imgSrc: "/products/sub/img1.png" },
+        { name: "Motor Canopy", imgSrc: "/products/sub/sub4/img7.jpg" },
       ],
     },
     {
@@ -223,28 +223,28 @@ export default function Products() {
       products: [
         {
           name: "Insulted Cord & Terminals",
-          imgSrc: "/products/sub/img1.png",
+          imgSrc: "/products/sub/sub8/img1.png",
         },
         {
           name: "Insulted Twin Cord End Terminals",
-          imgSrc: "/products/sub/img1.png",
+          imgSrc: "/products/sub/sub8/img2.png",
         },
-        { name: "Snap On Terminals", imgSrc: "/products/sub/img1.png" },
+        { name: "Snap On Terminals", imgSrc: "/products/sub/sub8/img3.png" },
         {
           name: "Copper Insulted Pin Type Cable Terminal Ends",
-          imgSrc: "/products/sub/img1.png",
+          imgSrc: "/products/sub/sub8/img4.png",
         },
         {
           name: "Copper Pin Type Cable Terminal Ends",
-          imgSrc: "/products/sub/img1.png",
+          imgSrc: "/products/sub/sub8/img5.png",
         },
         {
           name: "Long Barrel Tinned Copper Cable Terminal Ends",
-          imgSrc: "/products/sub/img1.png",
+          imgSrc: "/products/sub/sub8/img6.png",
         },
         {
           name: "High Voltage Copper Terminals - 33 KV",
-          imgSrc: "/products/sub/img1.png",
+          imgSrc: "/products/sub/sub8/img7.png",
         },
       ],
     },
@@ -314,13 +314,13 @@ export default function Products() {
         "Other products include cable joining kits, junction boxes, design flanges, floating connectors, and more. These items are designed to enhance electrical connectivity, ensure safety, and improve system reliability in various installations.",
       imgSrc: "/products/head/other.png",
       products: [
-        { name: "Infrared Thermometer", imgSrc: "/products/sub/img1.png" },
-        { name: "Clamp On Meter", imgSrc: "/products/sub/img1.png" },
-        { name: "Junction Box", imgSrc: "/products/sub/img1.png" },
-        { name: "Cable Joining Kit", imgSrc: "/products/sub/img1.png" },
-        { name: "Design A Flange", imgSrc: "/products/sub/img1.png" },
-        { name: "Floating Connector", imgSrc: "/products/sub/img1.png" },
-        { name: "Grommets", imgSrc: "/products/sub/img1.png" },
+        { name: "Infrared Thermometer", imgSrc: "/products/sub/sub11/img1.png" },
+        { name: "Clamp On Meter", imgSrc: "/products/sub/sub11/img2.png" },
+        { name: "Junction Box", imgSrc: "/products/sub/sub11/img3.jpg" },
+        { name: "Cable Joining Kit", imgSrc: "/products/sub/sub11/img4.png" },
+        { name: "Design A Flange", imgSrc: "/products/sub/sub11/img5.jpg" },
+        { name: "Floating Connector", imgSrc: "/products/sub/sub11/img6.png" },
+        { name: "Grommets", imgSrc: "/products/sub/sub11/img7.png" },
       ],
     },
   ];

@@ -5,7 +5,7 @@ import VisionMission from "@/components/VisionCard";
 
 export default function HeroAndAbout() {
   const sectors = [
-    { title: "Power Division", image: "/home/a1.png" },
+    { title: "Power Division", image: "/sec1.png" },
     {
       title: "Petro & Chemical Industry",
       image: "/home/a1.png",
@@ -21,7 +21,7 @@ export default function HeroAndAbout() {
     },
     {
       title: "Food & Beverage Industry",
-      image: "/home/a1.png",
+      image: "/sec6.jpg",
     },
     {
       title: "Pigment/Refinery Industry",
