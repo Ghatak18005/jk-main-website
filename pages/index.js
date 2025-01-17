@@ -2,85 +2,40 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 import { useInView } from "react-intersection-observer";
 import VisionMission from "@/components/VisionCard";
+import sectors from '../data/sectors.json';
+import Header from "@/components/Header";
+import Carousel from "@/components/Carousel";
+import ClientsCarousel from "@/components/ClientsCarousel";
+import { useEffect } from "react";
 
 export default function HeroAndAbout() {
-  const sectors = [
-    { title: "Power Division", image: "/sec1.png" },
-    {
-      title: "Petro & Chemical Industry",
-      image: "/home/a1.png",
-    },
-    { title: "Oil & Gas Industry", image: "/home/a3.png" },
-    {
-      title: "Water/ETP/MEE Plant",
-      image: "/home/a1.png",
-    },
-    {
-      title: "Eletrification Sctivities",
-      image: "/home/a1.png",
-    },
-    {
-      title: "Food & Beverage Industry",
-      image: "/sec6.jpg",
-    },
-    {
-      title: "Pigment/Refinery Industry",
-      image: "/home/a1.png",
-    },
-    {
-      title: "Machine Engineering",
-      image: "/home/a1.png",
-    },
-    {
-      title: "Refrigeration Division",
-      image: "/home/a1.png",
-    },
-    { title: "Pharma Industry", image: "/home/a1.png" },
-  ];
   const [ref, inView] = useInView({
     triggerOnce: false,
     threshold: 0.2,
   });
+
+  useEffect(() => {
+    // Check if we should scroll to clients section
+    const shouldScroll = sessionStorage.getItem('scrollToClients');
+    if (shouldScroll) {
+      // Clear the flag
+      sessionStorage.removeItem('scrollToClients');
+      // Add a small delay to ensure the page is fully loaded
+      setTimeout(() => {
+        const clientsSection = document.getElementById('clients-section');
+        if (clientsSection) {
+          clientsSection.scrollIntoView({ behavior: 'smooth' });
+        }
+      }, 100);
+    }
+  }, []);
+
   return (
     <div className="w-full bg-[#DEEDEF]">
+      <Header />
       <section className="relative w-full">
-        <div className="relative">
-          <motion.div
-            initial={{ opacity: 0, y: -20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-          >
-            {/* <Image
-              src="/.jpg"
-              alt="Hero Image"
-              width={600}
-              height={900}
-              objectFit="cover"
-              layout="responsive"
-              className="lg:block hidden"
-            /> */}
-          </motion.div>
-
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.3 }}
-          >
-            {/* <Image
-              src="/.jpg"
-              alt="Hero Image"
-              width={600}
-              height={900}
-              objectFit="cover"
-              layout="responsive"
-              style={{
-                aspectRatio: "1",
-              }}
-              className="lg:hidden block"
-            /> */}
-          </motion.div>
-        </div>
-
+        <Carousel />
+        
         <motion.div
           className="bg-[#C0DBE1] lg:py-8 py-7 px-4 sm:px-6 lg:px-4 text-[#2E414B]"
           initial={{ opacity: 0 }}
@@ -564,12 +519,13 @@ export default function HeroAndAbout() {
         <VisionMission />
       </section>
 
-      <section>
+      <section className="lg:py-28 px-7 py-6 lg:px-8" id="clients-section">
 
         <div className="text-center">
           <h2 className="lg:text-3xl text-xl font-bold text-[#2E414B] lg:mb-12 mb-7 bg-[#C0DBE1] py-2 rounded-2xl lg:w-5/12 w-2/3 mx-auto">
             OUR CLIENTS
           </h2>
+          <ClientsCarousel />
         </div>
       </section>
 
@@ -619,7 +575,7 @@ export default function HeroAndAbout() {
               <div className="flex flex-col mb-3 text-white text-base lg:mx-28 mx-0">
                 <h3 className="text-lg font-semibold mb-3">Contact :</h3>
                 <div className="flex items-center hover:text-[#BD7500] transition-all duration-300">
-                  <Image src="/phone.png" alt="Phone" width={24} height={24} />
+                  <Image src="/home/footer/phone.svg" alt="Phone" width={24} height={24} />
                   <a href="tel:+918320072668" className="pl-2 hover:underline">
                     +91 8320072668
                   </a>
