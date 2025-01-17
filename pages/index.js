@@ -237,7 +237,7 @@ export default function HeroAndAbout() {
                   <Image
                     src="/h1.png"
                     alt="Service 1"
-                    width={300}
+                    width={250}
                     height={200}
                     className="mx-auto rounded-lg"
                   />
@@ -262,7 +262,7 @@ export default function HeroAndAbout() {
                   <Image
                     src="/home/h4.png"
                     alt="Service 2"
-                    width={300}
+                    width={250}
                     height={200}
                     className="mx-auto rounded-lg lg:block hidden"
                   />
@@ -294,7 +294,7 @@ export default function HeroAndAbout() {
                   <Image
                     src="/h3.png"
                     alt="Service 3"
-                    width={300}
+                    width={250}
                     height={200}
                     className="mx-auto rounded-lg lg:block hidden"
                   />
@@ -398,19 +398,16 @@ export default function HeroAndAbout() {
                 <motion.div
                   key={index}
                   initial={{ opacity: 0, y: 50 }}
-                  animate={
-                    inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }
-                  }
+                  animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }}
                   transition={{ duration: 0.5, delay: 0.2 * index }}
                   className="relative mx-2"
                 >
-
                   <Image
                     src={sector.image}
                     alt={sector.title}
-                    width={300}
+                    width={250}
                     height={200}
-                    className="rounded-full"
+                    className="rounded-full h-auto"
                   />
                   <div className="absolute inset-0 flex items-center justify-center">
                     <p className="text-white text-lg font-bold">
@@ -436,7 +433,7 @@ export default function HeroAndAbout() {
                 <Image
                   src={sectors[4].image}
                   alt={sectors[4].title}
-                  width={300}
+                  width={250}
                   height={200}
                   className="rounded-full"
                 />
@@ -471,7 +468,7 @@ export default function HeroAndAbout() {
                 <Image
                   src={sectors[5].image}
                   alt={sectors[5].title}
-                  width={300}
+                  width={250}
                   height={200}
                   className="rounded-full"
                 />
@@ -500,7 +497,7 @@ export default function HeroAndAbout() {
                   <Image
                     src={sector.image}
                     alt={sector.title}
-                    width={300}
+                    width={250}
                     height={200}
                     className="rounded-full"
                   />
