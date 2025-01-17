@@ -51,7 +51,7 @@ export default function HeroAndAbout() {
             >
               <div className="mb-0">
                 <Image
-                  src="/JK-LOGO.jpeg"
+                  src="/JK.svg"
                   alt="JK POWER SYSTEM LOGO"
                   width={100}
                   height={100}
@@ -260,7 +260,7 @@ export default function HeroAndAbout() {
               <div className="lg:px-5 lg:py-4 p-2">
                 <div className="mb-4">
                   <Image
-                    src="/home/h4.png"
+                    src="/h2.png"
                     alt="Service 2"
                     width={250}
                     height={200}
@@ -532,7 +532,7 @@ export default function HeroAndAbout() {
           <div className="flex flex-col md:flex-row md:space-x-10">
             <div className="flex-1 mb-8 md:mb-0 text-center md:text-left">
               <Image
-                src="/JK-LOGO.jpeg"
+                src="/JK.svg"
                 alt="Logo"
                 width={112}
                 height={112}
@@ -608,14 +608,6 @@ export default function HeroAndAbout() {
                 <div className="flex space-x-4 mb-5">
                   <a href="#">
                     <Image
-                      src="/home/footer/insta.svg"
-                      alt="Instagram"
-                      width={24}
-                      height={24}
-                    />
-                  </a>
-                  <a href="#">
-                    <Image
                       src="/home/footer/linkd.svg"
                       alt="LinkedIn"
                       width={24}
@@ -626,14 +618,6 @@ export default function HeroAndAbout() {
                     <Image
                       src="/home/footer/fb.svg"
                       alt="Facebook"
-                      width={24}
-                      height={24}
-                    />
-                  </a>
-                  <a href="#">
-                    <Image
-                      src="/home/footer/x.svg"
-                      alt="X (Twitter)"
                       width={24}
                       height={24}
                     />
@@ -653,7 +637,7 @@ export default function HeroAndAbout() {
                     height={24}
                   />
                   <p className="text-bae pl-2 hover:underline hover:text-[#BD7500] cursor-pointer">
-                    Office No: 401 &  Mangla Trade Hub, Nr. Billabong School, Vadsar Ring Road, Vadodara, Gujarat 390012
+                    Office No: 401 & 402 Mangla Trade Hub, Nr. Billabong School, Vadsar Ring Road, Vadodara, Gujarat 390012
                   </p>
                 </div>
               </div>
@@ -663,7 +647,7 @@ export default function HeroAndAbout() {
                   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3692.4127140376154!2d73.16788007474827!3d22.262350844270948!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395fc731ee762685%3A0x7066ca4dd82bd16c!2sMangla%20Trade%20Hub!5e0!3m2!1sen!2sin!4v1736791453900!5m2!1sen!2sin"
                   width="600"
                   height="450"
-                  style={{ border: 0 }} // Corrected style object
+                  style={{ border: 0 }} 
                   allowFullScreen
                   loading="lazy"
                   referrerPolicy="no-referrer-when-downgrade"

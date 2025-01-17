@@ -3,12 +3,24 @@ import Image from 'next/image';
 import { motion, AnimatePresence } from 'framer-motion';
 
 const clients = [
-  { src: '/clients/client1.png', name: 'Client 1' },
-  { src: '/clients/client2.png', name: 'Client 2' },
-  { src: '/clients/client3.png', name: 'Client 3' },
-  { src: '/clients/client4.png', name: 'Client 4' },
-  { src: '/clients/client5.png', name: 'Client 5' },
-  { src: '/clients/client6.png', name: 'Client 6' },
+  { src: '/home/client/c1.png', name: 'Client 1' },
+  { src: '/home/client/c2.png', name: 'Client 2' },
+  { src: '/home/client/c3.png', name: 'Client 3' },
+  { src: '/home/client/c4.png', name: 'Client 4' },
+  { src: '/home/client/c5.png', name: 'Client 5' },
+  { src: '/home/client/c6.png', name: 'Client 6' },
+  { src: '/home/client/c7.png', name: 'Client 7' },
+  { src: '/home/client/c8.png', name: 'Client 8' },
+  { src: '/home/client/c9.png', name: 'Client 9' },
+  { src: '/home/client/c10.png', name: 'Client 10' },
+  { src: '/home/client/c11.png', name: 'Client 11' },
+  { src: '/home/client/c12.png', name: 'Client 12' },
+  { src: '/home/client/c13.png', name: 'Client 13' },
+  { src: '/home/client/c14.png', name: 'Client 14' },
+  { src: '/home/client/c15.png', name: 'Client 15' },
+
+
+
 ];
 
 export default function ClientsCarousel() {
@@ -69,7 +81,7 @@ export default function ClientsCarousel() {
               .map((client, index) => (
                 <motion.div
                   key={index}
-                  className="bg-white rounded-lg shadow-lg p-4 flex items-center justify-center"
+                  className="rounded-lg shadow-lg p-4 flex items-center justify-center"
                   style={{ 
                     width: `calc(${100 / itemsPerSlide}% - 1rem)`,
                     maxWidth: '300px'

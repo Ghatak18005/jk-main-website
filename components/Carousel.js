@@ -6,9 +6,12 @@ export default function Carousel() {
   const [currentIndex, setCurrentIndex] = useState(0);
   
   const images = [
-    { src: '/home/hero1.jpg', alt: 'Electrical Systems 1' },
-    { src: '/home/hero2.jpg', alt: 'Electrical Systems 2' },
-    { src: '/home/hero3.jpg', alt: 'Electrical Systems 3' },
+    { src: '/home/hero/hero1.jpg', alt: 'Electrical Systems 1' },
+    { src: '/home/hero/hero2.jpeg', alt: 'Electrical Systems 2' },
+    { src: '/home/hero/hero3.jpg', alt: 'Electrical Systems 3' },
+    { src: '/home/hero/hero4.png', alt: 'Electrical Systems 3' },
+    { src: '/home/hero/hero5.png', alt: 'Electrical Systems 3' },
+
   ];
 
   useEffect(() => {

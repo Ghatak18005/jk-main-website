@@ -29,7 +29,7 @@ export default function Header() {
           <div className="flex-shrink-0">
             <Link href="/">
               <Image
-                src="/JK-LOGO.jpeg"
+                src="/JK.svg"
                 alt="JK POWER SYSTEM LOGO"
                 width={100}
                 height={100}
