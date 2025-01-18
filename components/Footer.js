@@ -107,7 +107,7 @@ export default function Footer() {
                   height={24}
                 />
                 <p className="text-base pl-2 hover:underline hover:text-[#BD7500] cursor-pointer">
-                  Office No: 401 & Mangla Trade Hub, Nr. Billabong School, Vadsar Ring Road, Vadodara, Gujarat 390012
+                  Office No: 401 & 402 Mangla Trade Hub, Nr. Billabong School, Vadsar Ring Road, Vadodara, Gujarat 390012
                 </p>
               </div>
             </div>
