@@ -53,7 +53,7 @@ export default function About() {
             className="relative h-[60vh] w-full"
           >
             <Image
-              src="/about_us/hero_section.png"
+              src="/about/hero_section.png"
               alt="Company Hero Image"
               fill
               className="object-cover"
