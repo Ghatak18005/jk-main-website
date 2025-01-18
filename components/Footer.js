@@ -7,11 +7,11 @@ export default function Footer() {
         <div className="flex flex-col md:flex-row md:space-x-10">
           <div className="flex-1 mb-8 md:mb-0 text-center md:text-left">
             <Image
-              src="/JK-LOGO.jpeg"
+              src="/JK.svg"
               alt="Logo"
               width={112}
               height={112}
-              className="mb-4 mx-auto md:mx-0 w-full h-44"
+              className="mb-4 mx-auto md:mx-0 w-full h-44 bg-white p-2 rounded-lg"
             />
 
             <p className="text-base text-white mb-4 text-left">
