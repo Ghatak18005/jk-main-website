@@ -175,9 +175,6 @@ export default function HeroAndAbout() {
               viewport={{ once: true }}
               transition={{ duration: 1, delay: 0.5 }}
             >
-              <h2 className="text-center lg:text-3xl text-base font-bold lg:mb-12 mb-7 py-2 w-2/3 bg-[#C0DBE1] lg:rounded-l-2xl mx-auto lg:block">
-                What We Do ?
-              </h2>
 
               <motion.p
                 className="text-lg"

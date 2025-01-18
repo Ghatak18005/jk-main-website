@@ -58,23 +58,25 @@
       "searchTerms": ["industrial light", "high bay light", "well glass", "high bay canopy", "standard baselight", "linear light", "system ceiling baselight", "cleanroom baselight", "industrial battern", "downlight surface mounted", "panel light", "suspended light", "floodlight", "bollard light", "bulkhead light", "trunking light", "flp well glass light", "flp hand lamp", "flp floodlight"],
       "products": [
         { "name": "High Bay Light", "imgSrc": "/products/sub/sub3/img1.jpg" },
-        { "name": "Well Glass", "imgSrc": "/products/sub/sub3/img2.png" },
-        { "name": "High Bay - Canopy", "imgSrc": "/products/sub/sub3/img3.png" },
-        { "name": "Standard Baselight", "imgSrc": "/products/sub/sub3/img4.png" },
-        { "name": "Linear Light", "imgSrc": "/products/sub/sub3/img5.png" },
-        { "name": "System Ceiling Baselight", "imgSrc": "/products/sub/sub3/img6.png" },
-        { "name": "Cleanroom Baselight", "imgSrc": "/products/sub/sub3/img7.png" },
+        { "name": "Well Glass", "imgSrc": "/products/sub/sub3/img2.jpg" },
+        { "name": "High Bay - Canopy", "imgSrc": "/products/sub/sub3/img3.jpg" },
+        { "name": "Standard Baselight", "imgSrc": "/products/sub/sub3/img4.jpg" },
+        { "name": "Linear Light", "imgSrc": "/products/sub/sub3/img5.jpg" },
+        { "name": "System Ceiling Baselight", "imgSrc": "/products/sub/sub3/img6.jpg" },
+        { "name": "Cleanroom Baselight", "imgSrc": "/products/sub/sub3/img7.jpg" },
         { "name": "Industrial Battern", "imgSrc": "/products/sub/sub3/img8.png" },
-        { "name": "Downlight Surface Mounted", "imgSrc": "/products/sub/sub3/img9.png" },
+        { "name": "Downlight Surface Mounted", "imgSrc": "/products/sub/sub3/img9.jpg" },
         { "name": "Panel Light", "imgSrc": "/products/sub/sub3/img10.png" },
-        { "name": "Suspended Light", "imgSrc": "/products/sub/sub3/img12.png" },
-        { "name": "Floodlight", "imgSrc": "/products/sub/sub3/img13.png" },
-        { "name": "Bollard Light", "imgSrc": "/products/sub/sub3/img14.png" },
-        { "name": "Bulkhead Light", "imgSrc": "/products/sub/sub3/img15.png" },
-        { "name": "Trunking Light", "imgSrc": "/products/sub/sub3/img16.png" },
-        { "name": "FLP Well Glass Light", "imgSrc": "/products/sub/sub3/img17.png" },
-        { "name": "FLP Hand Lamp", "imgSrc": "/products/sub/sub3/img19.png" },
-        { "name": "FLP Floodlight", "imgSrc": "/products/sub/sub3/img20.png" }
+        { "name": "Suspended Light", "imgSrc": "/products/sub/sub3/img11.jpg" },
+        { "name": "Floodlight", "imgSrc": "/products/sub/sub3/img12.png" },
+        { "name": "Bollard Light", "imgSrc": "/products/sub/sub3/img13.png" },
+        { "name": "Bulkhead Light", "imgSrc": "/products/sub/sub3/img14.png" },
+        { "name": "Trunking Light", "imgSrc": "/products/sub/sub3/img15.png" },
+        { "name": "FLP Well Glass Light", "imgSrc": "/products/sub/sub3/img16.png" },
+        { "name": "FLP Vessel Lamp", "imgSrc": "/products/sub/sub3/img17.jpg" },
+        { "name": "FLP Hand Lamp", "imgSrc": "/products/sub/sub3/img18.png" },
+        { "name": "FLP Floodlight", "imgSrc": "/products/sub/sub3/img19.png" }
+
       ]
     },
     {
@@ -109,8 +111,10 @@
         { "name": "FRP Moulded & Pultruded Gratings", "imgSrc": "/products/sub/sub5/img9.png" },
         { "name": "Polygonial or Octagonal Lighting Poles", "imgSrc": "/products/sub/sub5/img10.png" },
         { "name": "Swaged Lighting Poles", "imgSrc": "/products/sub/sub5/img11.png" },
-        { "name": "Conical Poles", "imgSrc": "/products/sub/sub5/img11.png" },
-        { "name": "High Mast Pole", "imgSrc": "/products/sub/sub5/img13.png" }
+        { "name": "Conical Poles", "imgSrc": "/products/sub/sub5/img12.png" },
+        { "name": "High Mast Pole", "imgSrc": "/products/sub/sub5/img13.png" },
+        { "name": "Flag Mast Pole", "imgSrc": "/products/sub/sub5/img14.png" }
+
       ]
     },
     {
@@ -119,12 +123,14 @@
       "imgSrc": "/products/head/cable1.jpg",
       "searchTerms": ["cable gland", "conduit", "nylon type cable glands", "double compression cable gland", "reducer", "stop plugs", "flexible conduit", "stainless steel conduit"],
       "products": [
-        { "name": "Nylon Type Cable Glands", "imgSrc": "/products/sub/img1.png" },
-        { "name": "Double Compression Cable Gland", "imgSrc": "/products/sub/img1.png" },
-        { "name": "Reducer", "imgSrc": "/products/sub/img1.png" },
-        { "name": "Stop Plugs", "imgSrc": "/products/sub/img1.png" },
-        { "name": "Flexible Conduit", "imgSrc": "/products/sub/img1.png" },
-        { "name": "Stainless Steel Conduit", "imgSrc": "/products/sub/img1.png" }
+        { "name": "Nylon Type Cable Glands", "imgSrc": "/products/sub/sub6/img1.png" },
+        { "name": "Double Compression Cable Gland", "imgSrc": "/products/sub/sub6/img2.png" },
+        { "name": "Single Compression Cable Gland", "imgSrc": "/products/sub/sub6/img3.png" },
+        { "name": "Reducer", "imgSrc": "/products/sub/sub6/img4.png" },
+        { "name": "Stop Plugs", "imgSrc": "/products/sub/sub6/img5.png" },
+        { "name": "Flexible Conduit", "imgSrc": "/products/sub/sub6/img6.jpg" },
+        { "name": "Stainless Steel Conduit", "imgSrc": "/products/sub/sub6/img7.png" }
+
       ]
     },
     {
@@ -133,12 +139,12 @@
       "imgSrc": "/products/head/instrument.jpg",
       "searchTerms": ["instrument", "pressure measurement", "temperature measurement", "level measurement", "flow measurement", "vortex", "ph", "tds", "conductivity", "analytical instruments"],
       "products": [
-        { "name": "Pressure Measurement", "imgSrc": "/products/sub/img1.png" },
-        { "name": "Temperature Measurement Instruments with Indicators", "imgSrc": "/products/sub/img1.png" },
-        { "name": "Non-contact Type Level Measurement Instruments", "imgSrc": "/products/sub/img1.png" },
-        { "name": "Magnetic Flow type Flow Measurement Instruments", "imgSrc": "/products/sub/img1.png" },
-        { "name": "Vortex type Flow Measurement Instruments", "imgSrc": "/products/sub/img1.png" },
-        { "name": "PH/TDS/Conductivity type Analytical Instruments", "imgSrc": "/products/sub/img1.png" }
+        { "name": "Pressure Measurement", "imgSrc": "/products/sub/sub7/img1.png" },
+        { "name": "Temperature Measurement Instruments with Indicators", "imgSrc": "/products/sub/sub7/img2.jpg" },
+        { "name": "Non-contact Type Level Measurement Instruments", "imgSrc": "/products/sub/sub7/img3.png" },
+        { "name": "Magnetic Flow type Flow Measurement Instruments", "imgSrc": "/products/sub/sub7/img4.png" },
+        { "name": "Vortex type Flow Measurement Instruments", "imgSrc": "/products/sub/sub7/img5.png" },
+        { "name": "PH/TDS/Conductivity type Analytical Instruments", "imgSrc": "/products/sub/sub7/img6.jpg" }
       ]
     },
     {
@@ -162,12 +168,12 @@
       "imgSrc": "/products/head/earth.png",
       "searchTerms": ["earthing", "grounding", "copper bonded", "grounding rods", "chemical compounds", "earth pit", "earth rod seals", "lighting protection", "air terminal", "earth bars"],
       "products": [
-        { "name": "Copper Bonded Grounding Rods", "imgSrc": "/products/sub/img1.png" },
-        { "name": "Grounding Enhancing Chemical Compounds", "imgSrc": "/products/sub/img1.png" },
-        { "name": "Polymer Earth Pit Chambers", "imgSrc": "/products/sub/img1.png" },
-        { "name": "Earth Rod Seals", "imgSrc": "/products/sub/img1.png" },
-        { "name": "Lighting Protection Air Terminal", "imgSrc": "/products/sub/img1.png" },
-        { "name": "Earth Bars For Earth Pits", "imgSrc": "/products/sub/img1.png" }
+        { "name": "Copper Bonded Grounding Rods", "imgSrc": "/products/sub/sub9/img1.png" },
+        { "name": "Grounding Enhancing Chemical Compounds", "imgSrc": "/products/sub/sub9/img2.jpg" },
+        { "name": "Polymer Earth Pit Chambers", "imgSrc": "/products/sub/sub9/img3.png" },
+        { "name": "Earth Rod Seals", "imgSrc": "/products/sub/sub9/img4.jpg" },
+        { "name": "Lighting Protection Air Terminal", "imgSrc": "/products/sub/sub9/img5.png" },
+        { "name": "Earth Bars For Earth Pits", "imgSrc": "/products/sub/sub9/img6.png" }
       ]
     },
     {

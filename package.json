@@ -10,11 +10,13 @@
   },
   "dependencies": {
     "@vercel/analytics": "^1.4.1",
+    "@vercel/next": "^4.4.2",
     "autoprefixer": "^10.4.20",
     "card": "^2.5.4",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
     "framer-motion": "^11.17.0",
+    "jk-main-website": "file:",
     "lucide-react": "^0.469.0",
     "next": "15.1.4",
     "prop-types": "^15.8.1",
