@@ -108,7 +108,7 @@ export default function Products() {
               className="bg-[#2D5F6B] text-white rounded-lg shadow-md flex flex-col p-4 w-full mx-auto"
             >
               <motion.div
-                className="relative w-full lg:h-60 xl:h-full md:h-56 h-44 rounded-lg overflow-hidden"
+                className="relative w-full h-48 rounded-lg overflow-hidden"
                 initial={{ opacity: 0, scale: 0.9 }}
                 animate={{ opacity: 1, scale: 1 }}
                 transition={{ duration: 0.6, delay: index * 0.1 }}
@@ -118,7 +118,7 @@ export default function Products() {
                   alt={category.title}
                   width={500}
                   height={300}
-                  className="rounded-lg w-full"  
+                  className="rounded-lg w-full h-full object-cover"  
                 />
               </motion.div>
               <div className="pt-4 flex-grow">

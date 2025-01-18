@@ -18,15 +18,12 @@ const clients = [
   { src: '/home/client/c13.png', name: 'Client 13' },
   { src: '/home/client/c14.png', name: 'Client 14' },
   { src: '/home/client/c15.png', name: 'Client 15' },
-
-
-
 ];
 
 export default function ClientsCarousel() {
-  const [currentSlide, setCurrentSlide] = useState(0);
+  const [currentIndex, setCurrentIndex] = useState(0);
   const [isMounted, setIsMounted] = useState(false);
-  const [itemsPerSlide, setItemsPerSlide] = useState(4); // Default to desktop
+  const [itemsPerSlide, setItemsPerSlide] = useState(4);
 
   useEffect(() => {
     setIsMounted(true);
@@ -40,7 +37,7 @@ export default function ClientsCarousel() {
       }
     };
 
-    handleResize(); // Initial check
+    handleResize();
     window.addEventListener('resize', handleResize);
     return () => window.removeEventListener('resize', handleResize);
   }, []);
@@ -49,67 +46,63 @@ export default function ClientsCarousel() {
     if (!isMounted) return;
     
     const timer = setInterval(() => {
-      setCurrentSlide((prev) => 
-        prev === Math.ceil(clients.length / itemsPerSlide) - 1 ? 0 : prev + 1
-      );
+      setCurrentIndex((prev) => (prev + 1) % clients.length);
     }, 3000);
 
     return () => clearInterval(timer);
-  }, [isMounted, itemsPerSlide]);
+  }, [isMounted]);
 
   if (!isMounted) {
-    return null; // Return null on server-side
+    return null;
   }
+
+  const getVisibleClients = () => {
+    const visibleClients = [];
+    for (let i = 0; i < itemsPerSlide; i++) {
+      const index = (currentIndex + i) % clients.length;
+      visibleClients.push(clients[index]);
+    }
+    return visibleClients;
+  };
 
   return (
     <div className="w-full max-w-[95vw] mx-auto py-12 px-4">
       <div className="relative overflow-hidden">
-        <AnimatePresence mode='wait'>
-          <motion.div
-            key={currentSlide}
-            className="flex justify-center gap-4"
-            initial={{ opacity: 0, x: 100 }}
-            animate={{ opacity: 1, x: 0 }}
-            exit={{ opacity: 0, x: -100 }}
-            transition={{ duration: 0.5 }}
-          >
-            {clients
-              .slice(
-                currentSlide * itemsPerSlide,
-                (currentSlide + 1) * itemsPerSlide
-              )
-              .map((client, index) => (
-                <motion.div
-                  key={index}
-                  className="rounded-lg shadow-lg p-4 flex items-center justify-center"
-                  style={{ 
-                    width: `calc(${100 / itemsPerSlide}% - 1rem)`,
-                    maxWidth: '300px'
-                  }}
-                  whileHover={{ scale: 1.05 }}
-                >
-                  <div className="relative w-full aspect-square">
-                    <Image
-                      src={client.src}
-                      alt={client.name}
-                      fill
-                      className="object-contain p-2"
-                    />
-                  </div>
-                </motion.div>
-              ))}
-          </motion.div>
-        </AnimatePresence>
+        <div className="flex justify-center gap-4">
+          {getVisibleClients().map((client, index) => (
+            <motion.div
+              key={`${currentIndex}-${index}`}
+              className="rounded-lg shadow-lg p-4 flex items-center justify-center"
+              style={{ 
+                width: `calc(${100 / itemsPerSlide}% - 1rem)`,
+                maxWidth: '300px'
+              }}
+              initial={{ opacity: 0, x: index === itemsPerSlide - 1 ? 100 : 0 }}
+              animate={{ opacity: 1, x: 0 }}
+              exit={{ opacity: 0, x: index === 0 ? -100 : 0 }}
+              transition={{ duration: 0.5 }}
+            >
+              <div className="relative w-full aspect-square">
+                <Image
+                  src={client.src}
+                  alt={client.name}
+                  fill
+                  className="object-contain p-2"
+                />
+              </div>
+            </motion.div>
+          ))}
+        </div>
       </div>
 
       <div className="flex justify-center mt-6 space-x-2">
-        {Array.from({ length: Math.ceil(clients.length / itemsPerSlide) }).map((_, index) => (
+        {Array.from({ length: clients.length }).map((_, index) => (
           <button
             key={index}
             className={`w-3 h-3 rounded-full transition-colors duration-300 ${
-              currentSlide === index ? 'bg-[#BD7500]' : 'bg-gray-300'
+              index === currentIndex ? 'bg-[#BD7500]' : 'bg-gray-300'
             }`}
-            onClick={() => setCurrentSlide(index)}
+            onClick={() => setCurrentIndex(index)}
           />
         ))}
       </div>

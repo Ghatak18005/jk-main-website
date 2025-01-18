@@ -23,7 +23,7 @@ export default function Header() {
   };
 
   return (
-    <header className="bg-[#DEEDEF] shadow-md fixed w-full z-50">
+    <header className="bg-[#DEEDEF]/60 fixed w-full z-50 mb-10">
       <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-16 items-center">
           <div className="flex-shrink-0">
