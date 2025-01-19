@@ -102,43 +102,58 @@ export default function Header() {
 
         {/* Mobile Menu */}
         {isMenuOpen && (
-          <div className="md:hidden pb-10">
-            <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-[#DEEDEF] shadow-lg rounded-b-lg">
+          <div className="md:hidden pb-14">
+            <div className="px-4 pt-4 pb-5 space-y-2 sm:px-6 bg-[#DEEDEF] shadow-lg rounded-b-lg h-auto">
               <Link
                 href="/"
-                className="text-[#2E414B] hover:text-[#BD7500] block px-3 py-2 rounded-md text-base font-medium transition-colors"
+                className="text-[#2E414B] hover:text-[#BD7500] block px-4 py-2 rounded-md text-base font-medium transition-colors"
                 onClick={() => setIsMenuOpen(false)}
               >
                 Home
               </Link>
               <Link
                 href="/about"
-                className="text-[#2E414B] hover:text-[#BD7500] block px-3 py-2 rounded-md text-base font-medium transition-colors"
+                className="text-[#2E414B] hover:text-[#BD7500] block px-4 py-2 rounded-md text-base font-medium transition-colors"
                 onClick={() => setIsMenuOpen(false)}
               >
                 About
               </Link>
               <Link
                 href="/products"
-                className="text-[#2E414B] hover:text-[#BD7500] block px-3 py-2 rounded-md text-base font-medium transition-colors"
+                className="text-[#2E414B] hover:text-[#BD7500] block px-4 py-2 rounded-md text-base font-medium transition-colors"
                 onClick={() => setIsMenuOpen(false)}
               >
                 Products
               </Link>
               <Link
                 href="/certificate"
-                className="text-[#2E414B] hover:text-[#BD7500] block px-3 py-2 rounded-md text-base font-medium transition-colors"
+                className="text-[#2E414B] hover:text-[#BD7500] block px-4 py-2 rounded-md text-base font-medium transition-colors"
                 onClick={() => setIsMenuOpen(false)}
               >
                 Certificates
               </Link>
               <button
                 onClick={scrollToClients}
-                className="text-[#2E414B] hover:text-[#BD7500] block w-full text-left px-3 py-2 rounded-md text-base font-medium transition-colors"
+                className="text-[#2E414B] hover:text-[#BD7500] block px-4 py-2 rounded-md text-base font-medium transition-colors"
               >
                 Clients
               </button>
+              <Link
+                href=""
+                className="text-[#2E414B] hover:text-[#BD7500] block px-4 py-2 rounded-md text-base font-medium transition-colors"
+              >
+                Contact Us
+              </Link>
+              <div className="">
+                <Link
+                  href="https://admin.jkpowersystem.com/"
+                  className="text-[#2E414B] hover:text-[#BD7500] block px-4 py-2 rounded-md text-base font-medium transition-colors"
+                >
+                  Employee Login
+                </Link>
+              </div>
             </div>
+
           </div>
         )}
       </nav>
