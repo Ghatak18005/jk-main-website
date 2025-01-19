@@ -1,42 +1,42 @@
 [
   {
     "title": "Power Division",
-    "image": "/sec1.png"
+    "image": "/home/sector/sec1.png"
   },
   {
     "title": "Petro & Chemical Industry",
-    "image": "/home/a1.png"
+    "image": "/home/sector/sec2.png"
   },
   {
     "title": "Oil & Gas Industry",
-    "image": "/home/a3.png"
+    "image": "/home/sector/sec3.png"
   },
   {
     "title": "Water/ETP/MEE Plant",
-    "image": "/home/a1.png"
+    "image": "/home/sector/sec4.jpg"
   },
   {
-    "title": "Eletrification Sctivities",
-    "image": "/home/a1.png"
+    "title": "Eletrification Activities",
+    "image": "/home/sector/sec5.jpg"
   },
   {
     "title": "Food & Beverage Industry",
-    "image": "/sec6.jpg"
+    "image": "/home/sector/sec6.jpg"
   },
   {
     "title": "Pigment/Refinery Industry",
-    "image": "/home/a1.png"
+    "image": "/home/sector/sec7.png"
   },
   {
     "title": "Machine Engineering",
-    "image": "/home/a1.png"
+    "image": "/home/sector/sec8.png"
   },
   {
     "title": "Refrigeration Division",
-    "image": "/home/a1.png"
+    "image": "/home/sector/sec9.png"
   },
   {
     "title": "Pharma Industry",
-    "image": "/home/a1.png"
+    "image": "/home/sector/sec10.jpg"
   }
 ]

@@ -37,7 +37,7 @@ export default function Header() {
               />
             </Link>
           </div>
-          
+
           {/* Desktop Menu */}
           <div className="hidden md:block">
             <div className="ml-10 flex items-center space-x-8">
@@ -53,12 +53,18 @@ export default function Header() {
               <Link href="/certificate" className="text-[#2E414B] hover:text-[#BD7500] px-3 py-2 rounded-md text-lg font-medium transition-colors">
                 Certificates
               </Link>
-              <button 
+              <button
                 onClick={scrollToClients}
                 className="text-[#2E414B] hover:text-[#BD7500] px-3 py-2 rounded-md text-lg font-medium transition-colors"
               >
                 Clients
               </button>
+              <Link href="" className="text-[#2E414B] hover:text-[#BD7500] px-3 py-2 rounded-md text-lg font-medium transition-colors">
+                Contact Us
+              </Link>
+              <Link href="https://admin.jkpowersystem.com/" className="text-[#2E414B] hover:text-[#BD7500] px-3 py-2 rounded-md text-lg font-medium transition-colors">
+                Employee Login
+              </Link>
             </div>
           </div>
 

@@ -345,7 +345,7 @@ export default function HeroAndAbout() {
                   alt={sectors[4].title}
                   width={150}
                   height={100}
-                  className="rounded-md opacity-85"
+                  className="rounded-md opacity-85 h-24"
                 />
                 <div className="absolute inset-0 flex items-center justify-center">
                   <p className="text-white text-base font-bold">{sectors[4].title}</p>
@@ -358,7 +358,7 @@ export default function HeroAndAbout() {
                   alt={sectors[5].title}
                   width={150}
                   height={100}
-                  className="rounded-md opacity-85"
+                  className="rounded-md opacity-85 h-24"
                 />
                 <div className="absolute inset-0 flex items-center justify-center">
                   <p className="text-white text-base font-bold">{sectors[5].title}</p>
@@ -374,7 +374,7 @@ export default function HeroAndAbout() {
                     alt={sector.title}
                     width={150}
                     height={100}
-                    className="rounded-md opacity-85"
+                    className="rounded-md opacity-85 h-24"
                   />
                   <div className="absolute inset-0 flex items-center justify-center">
                     <p className="text-white text-base font-bold">{sector.title}</p>
@@ -404,7 +404,7 @@ export default function HeroAndAbout() {
                     alt={sector.title}
                     width={250}
                     height={200}
-                    className="rounded-full h-auto"
+                    className="rounded-full h-44"
                   />
                   <div className="absolute inset-0 flex items-center justify-center">
                     <p className="text-white text-lg font-bold">
@@ -432,11 +432,11 @@ export default function HeroAndAbout() {
                   alt={sectors[4].title}
                   width={250}
                   height={200}
-                  className="rounded-full"
+                  className="rounded-full h-44"
                 />
                 <div className="absolute inset-0 flex items-center justify-center">
                   <p className="text-white text-lg font-bold">
-                    {sectors.title}
+                    {sectors[4].title}
                   </p>
                 </div>
               </motion.div>
@@ -467,7 +467,7 @@ export default function HeroAndAbout() {
                   alt={sectors[5].title}
                   width={250}
                   height={200}
-                  className="rounded-full"
+                  className="rounded-full h-44"
                 />
                 <div className="absolute inset-0 flex items-center justify-center">
                   <p className="text-white text-lg font-bold">
@@ -496,7 +496,7 @@ export default function HeroAndAbout() {
                     alt={sector.title}
                     width={250}
                     height={200}
-                    className="rounded-full"
+                    className="rounded-full h-44"
                   />
                   <div className="absolute inset-0 flex items-center justify-center">
                     <p className="text-white text-lg font-bold">
