@@ -7,10 +7,10 @@ export default function Carousel() {
   
   const images = [
     { src: '/home/hero/hero1.jpg', alt: 'Electrical Systems 1' },
-    { src: '/home/hero/hero2.jpeg', alt: 'Electrical Systems 2' },
-    { src: '/home/hero/hero3.jpg', alt: 'Electrical Systems 3' },
+    { src: '/home/hero/hero8.jpeg', alt: 'Electrical Systems 2' },
+    { src: '/home/hero/hero9.jpg', alt: 'Electrical Systems 3' },
     { src: '/home/hero/hero4.png', alt: 'Electrical Systems 3' },
-    { src: '/home/hero/hero5.png', alt: 'Electrical Systems 3' },
+    { src: '/home/hero/hero19.jpg', alt: 'Electrical Systems 3' },
 
   ];
 
