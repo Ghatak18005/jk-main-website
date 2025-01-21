@@ -53,15 +53,15 @@ export default function Header() {
               <Link href="/certificate" className="text-[#2E414B] hover:text-[#BD7500] px-3 py-2 rounded-md text-lg font-medium transition-colors">
                 Certificates
               </Link>
+              <Link href="/contact" className="text-[#2E414B] hover:text-[#BD7500] px-3 py-2 rounded-md text-lg font-medium transition-colors">
+                Contact Us
+              </Link>
               <button
                 onClick={scrollToClients}
                 className="text-[#2E414B] hover:text-[#BD7500] px-3 py-2 rounded-md text-lg font-medium transition-colors"
               >
                 Clients
               </button>
-              <Link href="" className="text-[#2E414B] hover:text-[#BD7500] px-3 py-2 rounded-md text-lg font-medium transition-colors">
-                Contact Us
-              </Link>
               <Link href="https://admin.jkpowersystem.com/" className="text-[#2E414B] hover:text-[#BD7500] px-3 py-2 rounded-md text-lg font-medium transition-colors">
                 Employee Login
               </Link>
@@ -132,6 +132,12 @@ export default function Header() {
               >
                 Certificates
               </Link>
+              <Link
+                href="/contact"
+                className="text-[#2E414B] hover:text-[#BD7500] block px-4 py-2 rounded-md text-base font-medium transition-colors"
+              >
+                Contact Us
+              </Link>
               <button
                 onClick={scrollToClients}
                 className="text-[#2E414B] hover:text-[#BD7500] block px-4 py-2 rounded-md text-base font-medium transition-colors"
@@ -139,19 +145,11 @@ export default function Header() {
                 Clients
               </button>
               <Link
-                href=""
+                href="https://admin.jkpowersystem.com/"
                 className="text-[#2E414B] hover:text-[#BD7500] block px-4 py-2 rounded-md text-base font-medium transition-colors"
               >
-                Contact Us
+                Employee Login
               </Link>
-              <div className="">
-                <Link
-                  href="https://admin.jkpowersystem.com/"
-                  className="text-[#2E414B] hover:text-[#BD7500] block px-4 py-2 rounded-md text-base font-medium transition-colors"
-                >
-                  Employee Login
-                </Link>
-              </div>
             </div>
 
           </div>
