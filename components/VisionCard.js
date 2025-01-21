@@ -1,15 +1,15 @@
 import React from 'react';
-import { motion } from 'framer-motion'; // Import Framer Motion for animation
+import { motion } from 'framer-motion'; 
 import Image from 'next/image';
 
 const VisionCard = ({ imageSrc, altText, description }) => {
   return (
     <motion.div
       className="overflow-hidden rounded-xl transition-transform transform border-4 border-[#BD7500]"
-      initial={{ opacity: 0, y: 20 }} // Initial state (hidden and slightly below)
-      whileInView={{ opacity: 1, y: 0 }} // Animate to visible and bring up
-      viewport={{ once: true }} // Trigger animation only once when it comes into view
-      transition={{ duration: 1, delay: 0.2 }} // Adjust duration and delay
+      initial={{ opacity: 0, y: 20 }} 
+      whileInView={{ opacity: 1, y: 0 }} 
+      viewport={{ once: true }} 
+      transition={{ duration: 1, delay: 0.2 }} 
     >
       <div className="lg:px-5 lg:py-4 p-2">
         <div className="mb-4">
@@ -65,7 +65,6 @@ const VisionMission = () => {
             imageSrc={item.imageSrc}
             altText={item.altText}
             description={item.description}
-            // Apply staggered delay based on index
             transition={{ duration: 1, delay: index * 0.2 }} 
           />
         ))}

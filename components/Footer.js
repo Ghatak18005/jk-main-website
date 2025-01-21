@@ -11,7 +11,7 @@ export default function Footer() {
               alt="Logo"
               width={112}
               height={112}
-              className="mb-4 mx-auto md:mx-0 w-full h-44 bg-white p-2 rounded-lg"
+              className="mb-4 mx-auto md:mx-0 w-full h-44 p-2 rounded-lg"
             />
 
             <p className="text-base text-white mb-4 text-left">
@@ -36,7 +36,7 @@ export default function Footer() {
                   />
                 </div>
                 <p className="text-lg hover:underline hover:text-[#BD7500] transition-all duration-300">
-                  Our Brochure
+                  Download Our Brochure
                 </p>
               </a>
             </div>
@@ -81,16 +81,10 @@ export default function Footer() {
               <h3 className="text-lg font-semibold mb-3 w-full">Follow Us On :</h3>
               <div className="flex space-x-4 mb-5">
                 <a href="#" className="hover:scale-110 transition-transform">
-                  <Image src="/home/footer/insta.svg" alt="Instagram" width={24} height={24} />
-                </a>
-                <a href="#" className="hover:scale-110 transition-transform">
                   <Image src="/home/footer/linkd.svg" alt="LinkedIn" width={24} height={24} />
                 </a>
                 <a href="#" className="hover:scale-110 transition-transform">
                   <Image src="/home/footer/fb.svg" alt="Facebook" width={24} height={24} />
-                </a>
-                <a href="#" className="hover:scale-110 transition-transform">
-                  <Image src="/home/footer/x.svg" alt="X (Twitter)" width={24} height={24} />
                 </a>
               </div>
             </div>

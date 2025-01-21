@@ -212,6 +212,18 @@
         { "name": "Floating Connector", "imgSrc": "/products/sub/sub11/img6.png" },
         { "name": "Grommets", "imgSrc": "/products/sub/sub11/img7.png" }
       ]
+    },
+    {
+      "title": "Panel",
+      "description": "An electrical panel is a crucial component of any electrical system, serving as the central distribution point for power within a building or structure. It houses a variety of electrical components, such as Circuit breakers,Main breaker,Bus bars, Neutral bus,Ground bus",
+      "imgSrc": "/products/head/panel.png",
+      "searchTerms": ["infrared thermometer", "clamp on meter", "junction box", "cable joining kit", "design flange", "floating connector", "grommets"],
+      "products": [
+        { "name": "PCC Panel", "imgSrc": "/products/sub/sub12/img1.jpg" },
+        { "name": "MCC Pannel", "imgSrc": "/products/sub/sub12/img2.jpg" },
+        { "name": "APFC Pannel", "imgSrc": "/products/sub/sub12/img3.jpg" },
+        { "name": "VFD Panel", "imgSrc": "/products/sub/sub12/img4.jpg" }
+      ]
     }
   ]
 } 
