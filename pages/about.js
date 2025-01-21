@@ -8,10 +8,10 @@ export default function About() {
   return (
     <>
       <Head>
-        <title>About Us | Our Company</title>
+        <title>About Us | JK Power System</title>
         <meta
           name="description"
-          content="Learn about our company's mission, values, and founders."
+          content="Learn about JK Power System's mission, values, and founders."
         />
       </Head>
       <div className="min-h-screen bg-[#DEEDEF] overflow-hidden">

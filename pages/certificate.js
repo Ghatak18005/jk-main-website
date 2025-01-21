@@ -2,6 +2,8 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
+import Head from "next/head";
+
 
 export default function Certificate() {
   // Dictionary of certificates
@@ -21,7 +23,16 @@ export default function Certificate() {
   ];
 
   return (
+
     <div className="min-h-screen bg-[#DEEDEF]">
+      <Head>
+        <title>Company Certificates | JK Power System</title>
+        <meta
+          name="description"
+          content="Explore the certifications and credentials of JK Power System that validate our expertise, quality standards, and commitment to excellence."
+        />
+      </Head>
+
       <Header />
       {/* Add padding-top to account for fixed header */}
       <div className="pt-24 p-10">

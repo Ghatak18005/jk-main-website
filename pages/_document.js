@@ -16,16 +16,16 @@ export default function Document() {
         <meta property="og:url" content="https://jkpowersystem.com/" />
         <meta property="og:title" content="JK Power System - Government Approved Electrical Contractor" />
         <meta property="og:description" content="Leading provider of industrial and commercial electrical solutions, specializing in material supply and panel manufacturing." />
-        <meta property="og:image" content="/JK-LOGO.png" />
+        <meta property="og:image" content="/JK.svg" />
 
         {/* Twitter */}
         <meta property="twitter:card" content="summary_large_image" />
         <meta property="twitter:url" content="https://jkpowersystem.com/" />
         <meta property="twitter:title" content="JK Power System - Government Approved Electrical Contractor" />
         <meta property="twitter:description" content="Leading provider of industrial and commercial electrical solutions, specializing in material supply and panel manufacturing." />
-        <meta property="twitter:image" content="/JK-LOGO.png" />
+        <meta property="twitter:image" content="/JK.svg" />
 
-        <link rel="icon" href="/JK-LOGO.png" />
+        <link rel="icon" href="/JK-TabLogo.png" />
       </Head>
       <body className="antialiased">
         <Main />

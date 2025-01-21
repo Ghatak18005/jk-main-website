@@ -4,6 +4,8 @@ import { motion, AnimatePresence } from "framer-motion";
 import productData from '../data/products.json';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
+import Head from "next/head";
+import DealingCarousel from "@/components/DealingCarousel";
 
 export default function Products() {
   const [filteredCategories, setFilteredCategories] = useState(productData.categories);
@@ -57,6 +59,14 @@ export default function Products() {
 
   return (
     <div className="min-h-screen bg-[#DEEDEF]">
+      <Head>
+        <title>Products | JK Power System</title>
+        <meta
+          name="description"
+          content="Browse the premium range of electrical products by JK Power System, built for safety, performance, and reliability."
+        />
+      </Head>
+
       <Header />
       <div className="pt-16 overflow-hidden lg:px-5 px-3">
         {/* Search Bar */}
@@ -75,22 +85,19 @@ export default function Products() {
                 className="w-full py-2 px-8 bg-[#C0DBE1] focus:outline-none text-black rounded-full"
               />
               <button className="px-4 py-2">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  className="lucide lucide-search"
-                >
-                  <circle cx="11" cy="11" r="8" />
-                  <line x1="21" x2="16.65" y1="21" y2="16.65" />
+                <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g clip-path="url(#clip0_2314_76)">
+                    <path d="M31.6 33L25.3 26.7C24.8 27.1 24.225 27.4167 23.575 27.65C22.925 27.8833 22.2333 28 21.5 28C19.6833 28 18.1458 27.3708 16.8875 26.1125C15.6292 24.8542 15 23.3167 15 21.5C15 19.6833 15.6292 18.1458 16.8875 16.8875C18.1458 15.6292 19.6833 15 21.5 15C23.3167 15 24.8542 15.6292 26.1125 16.8875C27.3708 18.1458 28 19.6833 28 21.5C28 22.2333 27.8833 22.925 27.65 23.575C27.4167 24.225 27.1 24.8 26.7 25.3L33 31.6L31.6 33ZM21.5 26C22.75 26 23.8125 25.5625 24.6875 24.6875C25.5625 23.8125 26 22.75 26 21.5C26 20.25 25.5625 19.1875 24.6875 18.3125C23.8125 17.4375 22.75 17 21.5 17C20.25 17 19.1875 17.4375 18.3125 18.3125C17.4375 19.1875 17 20.25 17 21.5C17 22.75 17.4375 23.8125 18.3125 24.6875C19.1875 25.5625 20.25 26 21.5 26Z" fill="#2E414B" />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_2314_76">
+                      <rect x="4" y="4" width="40" height="40" rx="20" fill="white" />
+                    </clipPath>
+                  </defs>
                 </svg>
+
               </button>
+
             </div>
           </div>
         </motion.div>
@@ -118,7 +125,7 @@ export default function Products() {
                   alt={category.title}
                   width={500}
                   height={300}
-                  className="rounded-lg w-full h-full object-cover"  
+                  className="rounded-lg w-full h-full object-cover"
                 />
               </motion.div>
               <div className="pt-4 flex-grow">
@@ -181,6 +188,8 @@ export default function Products() {
           )}
         </AnimatePresence>
       </div>
+
+      <DealingCarousel />
       <Footer />
     </div>
   );

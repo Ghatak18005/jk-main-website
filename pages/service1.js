@@ -9,12 +9,13 @@ export default function Service() {
   return (
     <>
       <Head>
+        <title>Our Services | Electrical Solutions</title>
         <meta
           name="description"
-          content="Discover our core services, including Electrical Contracting Service, Project Activity, Maintenance Activity, Industrial and Commercial Material Supply, and Panel Manufacturing."
+          content="Discover our core services, including Electrical Contracting Service, Project Activity, Maintenance Activity, Industrial and Commercial Material Supply, and Panel Manufacturing. We deliver high-quality, reliable electrical solutions for every need."
         />
-
       </Head>
+
       <div className="min-h-screen bg-[#DEEDEF] overflow-hidden">
         <Header />
         <div className="pt-16">

@@ -164,29 +164,59 @@
     },
     {
       "title": "Earthing",
-      "description": "Earthing ensures safety by connecting electrical systems to the ground, preventing electrical shocks, equipment damage, and fire hazards during faults.",
+      "description": "Earthing is a critical safety measure that connects electrical systems to the ground, protecting against electrical shocks, equipment damage, and fire hazards. It ensures system stability during electrical faults and enhances overall safety in installations.",
       "imgSrc": "/products/head/earth.png",
-      "searchTerms": ["earthing", "grounding", "copper bonded", "grounding rods", "chemical compounds", "earth pit", "earth rod seals", "lighting protection", "air terminal", "earth bars"],
+      "searchTerms": [
+        "earthing systems",
+        "grounding solutions",
+        "copper bonded grounding rods",
+        "chemical grounding compounds",
+        "earth pit chambers",
+        "earth rod seals",
+        "lightning protection",
+        "air terminals",
+        "earth bars",
+        "grounding accessories",
+        "electrical safety grounding"
+      ],
       "products": [
         { "name": "Copper Bonded Grounding Rods", "imgSrc": "/products/sub/sub9/img1.png" },
         { "name": "Grounding Enhancing Chemical Compounds", "imgSrc": "/products/sub/sub9/img2.jpg" },
         { "name": "Polymer Earth Pit Chambers", "imgSrc": "/products/sub/sub9/img3.png" },
         { "name": "Earth Rod Seals", "imgSrc": "/products/sub/sub9/img4.jpg" },
-        { "name": "Lighting Protection Air Terminal", "imgSrc": "/products/sub/sub9/img5.png" },
-        { "name": "Earth Bars For Earth Pits", "imgSrc": "/products/sub/sub9/img6.png" }
+        { "name": "Lightning Protection Air Terminal", "imgSrc": "/products/sub/sub9/img5.png" },
+        { "name": "Earth Bars for Earth Pits", "imgSrc": "/products/sub/sub9/img6.png" }
       ]
-    },
+    },    
     {
       "title": "HT Product",
-      "description": "HT (High Tension) products are electrical components designed for high-voltage applications, ensuring the safe transmission and distribution of electricity in power systems. They include equipment such as transformers, circuit breakers, and switchgears",
+      "description": "HT (High Tension) products are essential for high-voltage applications, ensuring efficient and safe electricity transmission and distribution in power systems. Our range includes transformers, VCB panels, insulators, circuit breakers, and other critical components designed to meet high-performance standards.",
       "imgSrc": "/products/head/ht.png",
-      "searchTerms": ["ht", "high tension", "vcb panel", "goab switch", "drop out fuse", "isolater", "porcelain insulators", "polymer insulators", "lt & ht insulators", "discharging rod", "transmission line", "overhead line", "ht hrc fuse", "rubber sheet", "ht hand gloves"],
+      "searchTerms": [
+        "ht products",
+        "high tension equipment",
+        "vcb panel",
+        "outdoor vcb panel",
+        "goab switch",
+        "drop out fuse",
+        "isolator switch",
+        "porcelain insulators",
+        "polymer insulators",
+        "lt and ht insulators",
+        "discharging rod",
+        "transmission line materials",
+        "overhead line materials",
+        "ht hrc fuse",
+        "electrical rubber sheet",
+        "ht safety gloves",
+        "high voltage components"
+      ],
       "products": [
         { "name": "VCB Panel", "imgSrc": "/products/sub/sub10/img1.png" },
         { "name": "Outdoor type VCB Panel", "imgSrc": "/products/sub/sub10/img2.png" },
         { "name": "GOAB Switch", "imgSrc": "/products/sub/sub10/img3.png" },
         { "name": "Drop Out Fuse", "imgSrc": "/products/sub/sub10/img4.jpg" },
-        { "name": "Isolater", "imgSrc": "/products/sub/sub10/img5.jpg" },
+        { "name": "Isolator", "imgSrc": "/products/sub/sub10/img5.jpg" },
         { "name": "Porcelain Insulators", "imgSrc": "/products/sub/sub10/img6.png" },
         { "name": "Polymer Insulators", "imgSrc": "/products/sub/sub10/img7.jpg" },
         { "name": "LT & HT Insulators", "imgSrc": "/products/sub/sub10/img8.png" },
@@ -197,12 +227,23 @@
         { "name": "Rubber Sheet", "imgSrc": "/products/sub/sub10/img13.png" },
         { "name": "HT Hand Gloves", "imgSrc": "/products/sub/sub10/img14.jpg" }
       ]
-    },
+    },    
     {
       "title": "Other Product",
       "description": "Other products include cable joining kits, junction boxes, design flanges, floating connectors, and more. These items are designed to enhance electrical connectivity, ensure safety, and improve system reliability in various installations.",
       "imgSrc": "/products/head/other.png",
-      "searchTerms": ["infrared thermometer", "clamp on meter", "junction box", "cable joining kit", "design flange", "floating connector", "grommets"],
+      "searchTerms": [
+        "infrared thermometer",
+        "clamp on meter",
+        "junction box",
+        "cable joining kit",
+        "design flange",
+        "floating connector",
+        "grommets",
+        "electrical accessories",
+        "connectivity solutions",
+        "system reliability tools"
+      ],
       "products": [
         { "name": "Infrared Thermometer", "imgSrc": "/products/sub/sub11/img1.png" },
         { "name": "Clamp On Meter", "imgSrc": "/products/sub/sub11/img2.png" },
@@ -212,12 +253,12 @@
         { "name": "Floating Connector", "imgSrc": "/products/sub/sub11/img6.png" },
         { "name": "Grommets", "imgSrc": "/products/sub/sub11/img7.png" }
       ]
-    },
+    },    
     {
       "title": "Panel",
-      "description": "An electrical panel is a crucial component of any electrical system, serving as the central distribution point for power within a building or structure. It houses a variety of electrical components, such as Circuit breakers,Main breaker,Bus bars, Neutral bus,Ground bus",
+      "description": "An electrical panel is a crucial component of any electrical system, serving as the central distribution point for power within a building or structure. It houses a variety of electrical components, such as Circuit breakers, Main breaker, Bus bars, Neutral bus, Ground bus.",
       "imgSrc": "/products/head/panel.png",
-      "searchTerms": ["infrared thermometer", "clamp on meter", "junction box", "cable joining kit", "design flange", "floating connector", "grommets"],
+      "searchTerms": ["PCC panel", "MCC panel", "APFC panel", "VFD panel", "power control center", "motor control center", "automatic power factor correction", "variable frequency drive panel"],
       "products": [
         { "name": "PCC Panel", "imgSrc": "/products/sub/sub12/img1.jpg" },
         { "name": "MCC Pannel", "imgSrc": "/products/sub/sub12/img2.jpg" },
@@ -225,5 +266,6 @@
         { "name": "VFD Panel", "imgSrc": "/products/sub/sub12/img4.jpg" }
       ]
     }
+    
   ]
 } 
