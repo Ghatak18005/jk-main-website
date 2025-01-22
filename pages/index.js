@@ -217,7 +217,6 @@ export default function HeroAndAbout() {
       </section>
 
       <section className="lg:py-12 px-7 py-6 lg:px-8">
-
         <div className="max-w-7xl mx-auto text-center">
           <h2 className="lg:text-3xl text-xl font-bold text-[#2E414B] lg:mb-12 mb-7 bg-[#C0DBE1] py-2 rounded-2xl lg:w-3/12 w-3/4 mx-auto">
             CORE SERVICES
@@ -226,14 +225,14 @@ export default function HeroAndAbout() {
 
             {/* Service 1 */}
             <motion.div
-              className="overflow-hidden rounded-xl transition-transform transform border-4 border-[#BD7500]"
+              className="overflow-hidden rounded-xl border-4 border-[#BD7500] hover:bg-[#abdbe6] hover:shadow-2xl hover:scale-110 transition-all duration-300"
               initial={{ opacity: 0, scale: 0.8 }}
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true }}
               transition={{ duration: 1, type: "spring", stiffness: 100, damping: 25 }}
             >
               <Link href="/service1">
-                <div className="lg:px-5 lg:py-4 p-2 cursor-pointer overflow-hidden rounded-xl transition-transform transform border-[#BD7500]">
+                <div className="lg:px-5 lg:py-4 p-2 cursor-pointer">
                   <div className="mb-2">
                     <Image
                       src="/h1.png"
@@ -254,13 +253,12 @@ export default function HeroAndAbout() {
 
             {/* Service 2 */}
             <motion.div
-              className="overflow-hidden rounded-xl transition-transform transform border-4 border-[#BD7500]"
+              className="overflow-hidden rounded-xl border-4 border-[#BD7500] hover:bg-[#abdbe6] hover:shadow-2xl hover:scale-110 transition-all duration-300"
               initial={{ opacity: 0, scale: 0.8 }}
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true }}
               transition={{ duration: 1, type: "spring", stiffness: 100, damping: 25, delay: 0.2 }}
             >
-
               <Link href="/service2">
                 <div className="lg:px-5 lg:py-4 p-2 cursor-pointer">
                   <div className="mb-2">
@@ -285,18 +283,16 @@ export default function HeroAndAbout() {
                   </h3>
                 </div>
               </Link>
-
             </motion.div>
 
             {/* Service 3 */}
             <motion.div
-              className="overflow-hidden rounded-xl transition-transform transform border-4 border-[#BD7500]"
+              className="overflow-hidden rounded-xl border-4 border-[#BD7500] hover:bg-[#abdbe6] hover:shadow-2xl hover:scale-110 transition-all duration-300"
               initial={{ opacity: 0, scale: 0.8 }}
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true }}
               transition={{ duration: 1, type: "spring", stiffness: 100, damping: 25, delay: 0.4 }}
             >
-
               <Link href="/service3">
                 <div className="lg:px-5 lg:py-4 p-2 cursor-pointer">
                   <div className="mb-2">
@@ -320,11 +316,11 @@ export default function HeroAndAbout() {
                   </h3>
                 </div>
               </Link>
-
             </motion.div>
 
           </div>
         </div>
+
 
       </section>
 

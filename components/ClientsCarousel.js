@@ -66,7 +66,7 @@ export default function ClientsCarousel() {
   };
 
   return (
-    <div className="w-full max-w-[95vw] mx-auto py-12 px-4">
+    <div className="w-full max-w-7xl mx-auto py-12 px-4">
       <div className="relative overflow-hidden">
         <div className="flex justify-center gap-4">
           {getVisibleClients().map((client, index) => (
@@ -75,7 +75,8 @@ export default function ClientsCarousel() {
               className="rounded-lg shadow-lg p-4 flex items-center justify-center"
               style={{ 
                 width: `calc(${100 / itemsPerSlide}% - 1rem)`,
-                maxWidth: '300px'
+                maxWidth: '300px',
+                aspectRatio: '1/1',
               }}
               initial={{ opacity: 0, x: index === itemsPerSlide - 1 ? 100 : 0 }}
               animate={{ opacity: 1, x: 0 }}
@@ -86,8 +87,13 @@ export default function ClientsCarousel() {
                 <Image
                   src={client.src}
                   alt={client.name}
-                  fill
+                  width={350}
+                  height={350}
                   className="object-contain p-2"
+                  style={{ 
+                    maxWidth: '100%', 
+                    height: 'auto' 
+                  }}
                 />
               </div>
             </motion.div>
@@ -99,7 +105,7 @@ export default function ClientsCarousel() {
         {Array.from({ length: clients.length }).map((_, index) => (
           <button
             key={index}
-            className={`w-3 h-3 rounded-full transition-colors duration-300 ${
+            className={`lg:w-3 lg:h-3 h-2 w-2 rounded-full transition-colors duration-300 ${
               index === currentIndex ? 'bg-[#BD7500]' : 'bg-gray-300'
             }`}
             onClick={() => setCurrentIndex(index)}

@@ -107,7 +107,7 @@ export default function Products() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.8, delay: 0.2 }}
-          className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 lg:gap-6 mb-10"
+          className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 lg:gap-6 mb-20"
         >
           {filteredCategories.map((category, index) => (
             <motion.div
@@ -189,6 +189,11 @@ export default function Products() {
         </AnimatePresence>
       </div>
 
+      <div className="text-center">
+        <h2 className="lg:text-3xl text-xl font-bold text-[#2E414B] lg:mb-0 mb-7 bg-[#C0DBE1] py-2 rounded-2xl lg:w-5/12 w-2/3 mx-auto">
+          Dealing In
+        </h2>
+      </div>
       <DealingCarousel />
       <Footer />
     </div>
