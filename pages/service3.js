@@ -46,7 +46,7 @@ export default function Service() {
     const activePanelData = panels.find((panel) => panel.name === activePanel);
 
     // Fallback image in case activePanelData is not found or image is missing
-    const fallbackImage = "/path/to/fallback-image.jpg"; // Replace with an actual fallback image path
+    const fallbackImage = "/products/sub/sub12/img1.jpg"; // Replace with an actual fallback image path
 
     return (
         <>

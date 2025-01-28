@@ -24,14 +24,15 @@ export default function ClientsCarousel() {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isMounted, setIsMounted] = useState(false);
   const [itemsPerSlide, setItemsPerSlide] = useState(4);
+  const [isAutoPlaying, setIsAutoPlaying] = useState(true);
 
   useEffect(() => {
     setIsMounted(true);
     const handleResize = () => {
       if (window.innerWidth < 640) {
-        setItemsPerSlide(2);
+        setItemsPerSlide(1);
       } else if (window.innerWidth < 1024) {
-        setItemsPerSlide(3);
+        setItemsPerSlide(2);
       } else {
         setItemsPerSlide(4);
       }
@@ -43,18 +44,16 @@ export default function ClientsCarousel() {
   }, []);
 
   useEffect(() => {
-    if (!isMounted) return;
+    if (!isMounted || !isAutoPlaying) return;
     
     const timer = setInterval(() => {
-      setCurrentIndex((prev) => (prev + 1) % clients.length);
+      setCurrentIndex((prev) => (prev + 1) % (clients.length - itemsPerSlide + 1));
     }, 3000);
 
     return () => clearInterval(timer);
-  }, [isMounted]);
+  }, [isMounted, isAutoPlaying, itemsPerSlide]);
 
-  if (!isMounted) {
-    return null;
-  }
+  if (!isMounted) return null;
 
   const getVisibleClients = () => {
     const visibleClients = [];
@@ -65,50 +64,91 @@ export default function ClientsCarousel() {
     return visibleClients;
   };
 
+  const handleDotClick = (index) => {
+    setCurrentIndex(index);
+    setIsAutoPlaying(false);
+    setTimeout(() => setIsAutoPlaying(true), 5000);
+  };
+
+  const handlePrevClick = () => {
+    setCurrentIndex((prev) => 
+      prev === 0 ? clients.length - itemsPerSlide : prev - 1
+    );
+    setIsAutoPlaying(false);
+    setTimeout(() => setIsAutoPlaying(true), 5000);
+  };
+
+  const handleNextClick = () => {
+    setCurrentIndex((prev) => 
+      (prev + 1) % (clients.length - itemsPerSlide + 1)
+    );
+    setIsAutoPlaying(false);
+    setTimeout(() => setIsAutoPlaying(true), 5000);
+  };
+
   return (
     <div className="w-full max-w-7xl mx-auto py-12 px-4">
       <div className="relative overflow-hidden">
-        <div className="flex justify-center gap-4">
-          {getVisibleClients().map((client, index) => (
-            <motion.div
-              key={`${currentIndex}-${index}`}
-              className="rounded-lg shadow-lg p-4 flex items-center justify-center"
-              style={{ 
-                width: `calc(${100 / itemsPerSlide}% - 1rem)`,
-                maxWidth: '300px',
-                aspectRatio: '1/1',
-              }}
-              initial={{ opacity: 0, x: index === itemsPerSlide - 1 ? 100 : 0 }}
-              animate={{ opacity: 1, x: 0 }}
-              exit={{ opacity: 0, x: index === 0 ? -100 : 0 }}
-              transition={{ duration: 0.5 }}
-            >
-              <div className="relative w-full aspect-square">
-                <Image
-                  src={client.src}
-                  alt={client.name}
-                  width={350}
-                  height={350}
-                  className="object-contain p-2"
-                  style={{ 
-                    maxWidth: '100%', 
-                    height: 'auto' 
-                  }}
-                />
-              </div>
-            </motion.div>
-          ))}
+        {/* Navigation Arrows */}
+        <button
+          onClick={handlePrevClick}
+          className="absolute left-4 top-1/2 -translate-y-1/2 z-10 bg-white/80 hover:bg-white p-2 rounded-full shadow-lg transition-all duration-300 -ml-4"
+        >
+          <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-gray-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
+          </svg>
+        </button>
+        <button
+          onClick={handleNextClick}
+          className="absolute right-4 top-1/2 -translate-y-1/2 z-10 bg-white/80 hover:bg-white p-2 rounded-full shadow-lg transition-all duration-300 -mr-4"
+        >
+          <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-gray-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+          </svg>
+        </button>
+
+        {/* Carousel Items */}
+        <div className="flex justify-center gap-4 px-4">
+          <AnimatePresence mode="wait">
+            {getVisibleClients().map((client, index) => (
+              <motion.div
+                key={`${currentIndex}-${index}`}
+                className="bg-white rounded-xl shadow-lg p-6 flex items-center justify-center transform hover:scale-105 transition-all duration-300"
+                style={{ 
+                  width: `calc(${100 / itemsPerSlide}% - 1rem)`,
+                  maxWidth: '300px',
+                }}
+                initial={{ opacity: 0, x: 50 }}
+                animate={{ opacity: 1, x: 0 }}
+                exit={{ opacity: 0, x: -50 }}
+                transition={{ duration: 0.5 }}
+              >
+                <div className="relative w-full aspect-square">
+                  <Image
+                    src={client.src}
+                    alt={client.name}
+                    fill
+                    className="object-contain p-2"
+                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
+                  />
+                </div>
+              </motion.div>
+            ))}
+          </AnimatePresence>
         </div>
       </div>
 
-      <div className="flex justify-center mt-6 space-x-2">
-        {Array.from({ length: clients.length }).map((_, index) => (
+      {/* Navigation Dots */}
+      <div className="flex justify-center mt-8 space-x-2">
+        {Array.from({ length: clients.length - itemsPerSlide + 1 }).map((_, index) => (
           <button
             key={index}
-            className={`lg:w-3 lg:h-3 h-2 w-2 rounded-full transition-colors duration-300 ${
-              index === currentIndex ? 'bg-[#BD7500]' : 'bg-gray-300'
-            }`}
-            onClick={() => setCurrentIndex(index)}
+            className={`transition-all duration-300 ${
+              index === currentIndex 
+                ? 'w-8 h-2 bg-[#BD7500]' 
+                : 'w-2 h-2 bg-gray-300 hover:bg-gray-400'
+            } rounded-full`}
+            onClick={() => handleDotClick(index)}
           />
         ))}
       </div>
