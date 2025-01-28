@@ -26,6 +26,8 @@ export default function DealingCarousel() {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isMounted, setIsMounted] = useState(false);
   const [itemsPerSlide, setItemsPerSlide] = useState(4);
+  const [isAutoPlaying, setIsAutoPlaying] = useState(true);
+
 
   useEffect(() => {
     setIsMounted(true);
@@ -67,9 +69,42 @@ export default function DealingCarousel() {
     return visibleClients;
   };
 
+  const handlePrevClick = () => {
+    setCurrentIndex((prev) => 
+      prev === 0 ? clients.length - itemsPerSlide : prev - 1
+    );
+    setIsAutoPlaying(false);
+    setTimeout(() => setIsAutoPlaying(true), 5000);
+  };
+
+  const handleNextClick = () => {
+    setCurrentIndex((prev) => 
+      (prev + 1) % (clients.length - itemsPerSlide + 1)
+    );
+    setIsAutoPlaying(false);
+    setTimeout(() => setIsAutoPlaying(true), 5000);
+  };
+
   return (
     <div className="w-full max-w-7xl mx-auto py-12 px-4">
       <div className="relative overflow-hidden">
+
+      <button
+          onClick={handlePrevClick}
+          className="absolute left-4 top-1/2 -translate-y-1/2 z-10 bg-white/30 hover:bg-white p-2 rounded-full shadow-lg transition-all duration-300 -ml-4"
+        >
+          <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-gray-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
+          </svg>
+        </button>
+        <button
+          onClick={handleNextClick}
+          className="absolute right-4 top-1/2 -translate-y-1/2 z-10 bg-white/30 hover:bg-white p-2 rounded-full shadow-lg transition-all duration-300 -mr-4"
+        >
+          <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-gray-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+          </svg>
+        </button>
         <motion.div
           className="flex gap-4 transition-all"
           style={{

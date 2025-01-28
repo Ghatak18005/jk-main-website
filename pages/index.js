@@ -526,7 +526,7 @@ export default function HeroAndAbout() {
       <section className="lg:py-28 px-7 py-6 lg:px-8" id="clients-section">
 
         <div className="text-center">
-          <h2 className="lg:text-3xl text-xl font-bold text-[#2E414B] lg:mb-12 mb-7 bg-[#C0DBE1] py-2 rounded-2xl lg:w-5/12 w-2/3 mx-auto">
+          <h2 className="lg:text-3xl text-xl font-bold text-[#2E414B] lg:mb-12 mb-7 bg-[#C0DBE1] py-2 rounded-2xl lg:w-2/6 w-3/4 mx-auto">
             OUR CLIENTS
           </h2>
           <ClientsCarousel />

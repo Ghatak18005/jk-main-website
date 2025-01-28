@@ -6,11 +6,11 @@ export default function SerCar1() {
   const [currentIndex, setCurrentIndex] = useState(0);
   
   const images = [
-    { src: '/home/hero/hero1.jpg', alt: 'Electrical Systems 1' },
-    { src: '/home/hero/hero8.jpeg', alt: 'Electrical Systems 2' },
-    { src: '/home/hero/hero9.jpg', alt: 'Electrical Systems 3' },
-    { src: '/home/hero/hero5.png', alt: 'Electrical Systems 3' },
-    { src: '/home/hero/hero19.jpg', alt: 'Electrical Systems 3' },
+    { src: '/services/service1/img1.jpeg', alt: 'Service 1' },
+    { src: '/services/service1/img2.jpeg', alt: 'Service 2' },
+    { src: '/home/hero/hero1.jpg', alt: 'Service 3' },
+    { src: '/home/hero/hero5.png', alt: 'Service 4' },
+    { src: '/home/hero/hero19.jpg', alt: 'Service 5' },
 
   ];
 
