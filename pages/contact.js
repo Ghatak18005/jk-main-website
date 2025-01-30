@@ -25,6 +25,7 @@ export default function Contact() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
+      // Submit to PocketBase
       const response = await fetch('/api/contact', {
         method: 'POST',
         headers: {
@@ -32,14 +33,27 @@ export default function Contact() {
         },
         body: JSON.stringify(formData),
       });
-
+  
       if (!response.ok) {
         throw new Error('Failed to submit form');
       }
-
+  
+      // Send email notification
+      const emailResponse = await fetch('/api/send-contact-email', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      });
+  
+      if (!emailResponse.ok) {
+        console.error('Failed to send email notification');
+      }
+  
       const data = await response.json();
       console.log('Success:', data);
-
+  
       setFormData({
         companyName: '',
         enquirerName: '',
@@ -48,7 +62,7 @@ export default function Contact() {
         contactNo: '',
         description: ''
       });
-
+  
       alert('Thank you for your enquiry. We will get back to you soon.');
     } catch (error) {
       console.error('Error:', error);

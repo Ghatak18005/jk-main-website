@@ -242,7 +242,7 @@ export default function HeroAndAbout() {
                       className="mx-auto rounded-lg"
                     />
                   </div>
-                  <h3 className="lg:text-xl text-base text-black mb-2 text-center font-ar">
+                  <h3 className="lg:text-xl text-black mb-2 text-center">
                     - Electrical Contracting Service <br />
                     - Project Activity <br />
                     - Maintenance Activity
@@ -277,7 +277,7 @@ export default function HeroAndAbout() {
                       className="mx-auto rounded-lg block lg:hidden"
                     />
                   </div>
-                  <h3 className="lg:text-xl text-base text-gray-900 mb-2 text-center">
+                  <h3 className="lg:text-xl text-gray-900 mb-2 text-center">
                     - All Types of Industrial <br />
                     and Commercial Material Supply
                   </h3>
@@ -311,7 +311,7 @@ export default function HeroAndAbout() {
                       className="mx-auto rounded-lg block lg:hidden"
                     />
                   </div>
-                  <h3 className="lg:text-xl text-base text-gray-900 mb-2 text-center">
+                  <h3 className="lg:text-xl text-gray-900 mb-2 text-center">
                     - Panel Manufacturing
                   </h3>
                 </div>

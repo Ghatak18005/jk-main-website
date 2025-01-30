@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Head from "next/head";
 import Image from "next/image";
 import { motion } from "framer-motion";
@@ -47,6 +47,10 @@ export default function Service() {
 
     // Fallback image in case activePanelData is not found or image is missing
     const fallbackImage = "/products/sub/sub12/img1.jpg"; // Replace with an actual fallback image path
+
+    useEffect(() => {
+        setActivePanel("PCC Panel");
+    }, []);
 
     return (
         <>

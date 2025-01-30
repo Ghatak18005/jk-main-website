@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import Image from 'next/image';
-import { motion, AnimatePresence } from 'framer-motion';
+import { motion } from 'framer-motion';
 
 const clients = [
   { src: '/home/client/c1.png', name: 'Client 1' },
@@ -44,30 +44,26 @@ export default function ClientsCarousel() {
   }, []);
 
   useEffect(() => {
-    if (!isMounted || !isAutoPlaying) return;
-    
+    if (!isMounted) return;
+
     const timer = setInterval(() => {
-      setCurrentIndex((prev) => (prev + 1) % (clients.length - itemsPerSlide + 1));
+      setCurrentIndex((prev) => (prev + 1) % Math.ceil(clients.length / itemsPerSlide));
     }, 3000);
 
     return () => clearInterval(timer);
-  }, [isMounted, isAutoPlaying, itemsPerSlide]);
+  }, [isMounted, itemsPerSlide]);
 
-  if (!isMounted) return null;
+  if (!isMounted) {
+    return null;
+  }
 
   const getVisibleClients = () => {
     const visibleClients = [];
     for (let i = 0; i < itemsPerSlide; i++) {
-      const index = (currentIndex + i) % clients.length;
+      const index = (currentIndex * itemsPerSlide + i) % clients.length;
       visibleClients.push(clients[index]);
     }
     return visibleClients;
-  };
-
-  const handleDotClick = (index) => {
-    setCurrentIndex(index);
-    setIsAutoPlaying(false);
-    setTimeout(() => setIsAutoPlaying(true), 5000);
   };
 
   const handlePrevClick = () => {
@@ -89,10 +85,9 @@ export default function ClientsCarousel() {
   return (
     <div className="w-full max-w-7xl mx-auto py-12 px-4">
       <div className="relative overflow-hidden">
-        {/* Navigation Arrows */}
         <button
           onClick={handlePrevClick}
-          className="absolute left-4 top-1/2 -translate-y-1/2 z-10 bg-white/50 hover:bg-white p-2 rounded-full shadow-lg transition-all duration-300 -ml-4"
+          className="absolute left-4 top-1/2 -translate-y-1/2 z-10 bg-white/30 hover:bg-white p-2 rounded-full shadow-lg transition-all duration-300 -ml-4"
         >
           <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-gray-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
@@ -100,57 +95,59 @@ export default function ClientsCarousel() {
         </button>
         <button
           onClick={handleNextClick}
-          className="absolute right-4 top-1/2 -translate-y-1/2 z-10 bg-white/50 hover:bg-white p-2 rounded-full shadow-lg transition-all duration-300 -mr-4"
+          className="absolute right-4 top-1/2 -translate-y-1/2 z-10 bg-white/30 hover:bg-white p-2 rounded-full shadow-lg transition-all duration-300 -mr-4"
         >
           <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-gray-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
           </svg>
         </button>
-
-        {/* Carousel Items */}
-        <div className="flex justify-center gap-4 px-4">
-          <AnimatePresence mode="wait">
-            {getVisibleClients().map((client, index) => (
-              <motion.div
-                key={`${currentIndex}-${index}`}
-                className="rounded-xl flex items-center justify-center transform hover:scale-105 transition-all duration-300"
+        <motion.div
+          className="flex gap-4 transition-all"
+          style={{
+            display: 'flex',
+            flexWrap: 'nowrap',
+            transition: 'transform 0.5s ease',
+            transform: `translateX(-${(0 / itemsPerSlide) * currentIndex}%)`,
+          }}
+        >
+          {getVisibleClients().map((client, index) => (
+            <motion.div
+              key={index}
+              className="flex items-center justify-center mx-auto"
+              style={{
+                width: `calc(${100 / itemsPerSlide}% - 1rem)`,
+                maxWidth: '300px',
+                aspectRatio: '1/1',
+              }}
+            >
+              <Image
+                src={client.src}
+                alt={client.name}
+                width={350}
+                height={350}
+                className="object-contain p-2"
                 style={{ 
-                  width: `calc(${100 / itemsPerSlide}% - 1rem)`,
-                  maxWidth: '300px',
+                  maxWidth: '100%', 
+                  height: 'auto' 
                 }}
-                initial={{ opacity: 0, x: 50 }}
-                animate={{ opacity: 1, x: 0 }}
-                exit={{ opacity: 0, x: -50 }}
-                transition={{ duration: 0.5 }}
-              >
-                <div className="relative w-full aspect-square">
-                  <Image
-                    src={client.src}
-                    alt={client.name}
-                    fill
-                    className="object-contain p-2"
-                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
-                  />
-                </div>
-              </motion.div>
-            ))}
-          </AnimatePresence>
-        </div>
+              />
+            </motion.div>
+          ))}
+        </motion.div>
       </div>
 
-      {/* Navigation Dots */}
-      <div className="flex justify-center mt-8 space-x-2">
-        {Array.from({ length: clients.length - itemsPerSlide + 1 }).map((_, index) => (
-          <button
-            key={index}
-            className={`transition-all duration-300 ${
-              index === currentIndex 
-                ? 'w-8 h-2 bg-[#BD7500]' 
-                : 'w-2 h-2 bg-gray-300 hover:bg-gray-400'
-            } rounded-full`}
-            onClick={() => handleDotClick(index)}
-          />
-        ))}
+      <div className="flex justify-center mt-6 space-x-2">
+        {Array.from({ length: Math.ceil(clients.length / itemsPerSlide) }).map(
+          (_, index) => (
+            <button
+              key={index}
+              className={`lg:w-3 lg:h-3 h-2 w-2 rounded-full transition-colors duration-300 ${
+                index === currentIndex ? 'bg-[#BD7500]' : 'bg-gray-300'
+              }`}
+              onClick={() => setCurrentIndex(index)}
+            />
+          )
+        )}
       </div>
     </div>
   );
