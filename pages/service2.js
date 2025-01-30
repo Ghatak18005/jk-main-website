@@ -5,6 +5,8 @@ import productData from '../data/products.json';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import Head from "next/head";
+import DealingCarousel from "@/components/DealingCarousel";
+
 
 export default function Service2() {
     const [filteredCategories, setFilteredCategories] = useState(productData.categories);
@@ -189,6 +191,7 @@ export default function Service2() {
                     )}
                 </AnimatePresence>
             </div>
+            <DealingCarousel/>
             <Footer />
         </div>
     );

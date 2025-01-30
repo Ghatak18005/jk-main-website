@@ -9,8 +9,8 @@ export default function SerCar1() {
     { src: '/services/service1/img1.jpeg', alt: 'Service 1' },
     { src: '/services/service1/img2.jpeg', alt: 'Service 2' },
     { src: '/home/hero/hero1.jpg', alt: 'Service 3' },
-    { src: '/home/hero/hero5.png', alt: 'Service 4' },
-    { src: '/home/hero/hero19.jpg', alt: 'Service 5' },
+    { src: '/home/hero/hero8.jpeg', alt: 'Service 4' },
+    {src:'/home/hero/hero9.jpg',alt:'service 5'}
 
   ];
 

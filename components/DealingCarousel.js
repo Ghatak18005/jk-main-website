@@ -6,7 +6,7 @@ const clients = [
   { src: '/products/sub/deal/img1.png', name: 'Client 1' },
   { src: '/products/sub/deal/img2.png', name: 'Client 2' },
   { src: '/products/sub/deal/img3.png', name: 'Client 3' },
-  { src: '/products/sub/deal/img4.svg', name: 'Client 4' },
+  { src: '/products/sub/deal/img4.png', name: 'Client 4' },
   { src: '/products/sub/deal/img5.svg', name: 'Client 5' },
   { src: '/products/sub/deal/img6.png', name: 'Client 6' },
   { src: '/products/sub/deal/img7.svg', name: 'Client 7' },
@@ -19,7 +19,7 @@ const clients = [
   { src: '/products/sub/deal/img14.png', name: 'Client 14' },
   { src: '/products/sub/deal/img15.png', name: 'Client 15' },
   { src: '/products/sub/deal/img16.png', name: 'Client 16' },
-  { src: '/products/sub/deal/img17.jpg', name: 'Client 17' },
+  { src: '/products/sub/deal/img17.png', name: 'Client 17' },
 ];
 
 export default function DealingCarousel() {
