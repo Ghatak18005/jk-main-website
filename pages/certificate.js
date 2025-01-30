@@ -26,7 +26,7 @@ export default function Certificate() {
 
     <div className="min-h-screen bg-[#DEEDEF]">
       <Head>
-        <title>Company Certificates | JK Power System</title>
+        <title>Certificates | JK Power System</title>
         <meta
           name="description"
           content="Explore the certifications and credentials of JK Power System that validate our expertise, quality standards, and commitment to excellence."
