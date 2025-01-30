@@ -4,6 +4,7 @@ import Image from "next/image"
 import { motion } from "framer-motion"
 import Header from "@/components/Header"
 import Footer from "@/components/Footer"
+import Head from "next/head"
 
 const services = [
   {
@@ -57,7 +58,14 @@ const services = [
 export default function About() {
   return (
     <div className="min-h-screen bg-[#DEEDEF] overflow-hidden">
-      <Header/>
+      <Head>
+        <title>About Us | JK Power System</title>
+        <meta
+          name="description"
+          content="Learn more about JK Power System, your trusted source for high-quality electrical products designed for safety, performance, and reliability."
+        />
+      </Head>
+      <Header />
       <div className="pt-">
         <motion.section
           initial={{ opacity: 0 }}
@@ -135,7 +143,7 @@ export default function About() {
           ))}
         </motion.section>
       </div>
-      <Footer/>
+      <Footer />
     </div>
   )
 }

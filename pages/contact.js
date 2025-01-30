@@ -59,7 +59,7 @@ export default function Contact() {
   return (
     <div className="min-h-screen bg-[#DEEDEF]">
       <Head>
-        <title>Contact Us - JK Enterprise</title>
+        <title>Contact Us | JK Power System</title>
         <meta name="description" content="Contact JK Enterprise for your industrial needs" />
       </Head>
 

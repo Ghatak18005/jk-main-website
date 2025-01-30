@@ -4,7 +4,7 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 import Header from "@/components/Header";
 import Footer from '@/components/Footer';
-import SerCar1 from "@/components/SerCar1";
+import SerCar3 from "@/components/SerCar3";
 
 export default function Service() {
     const [activePanel, setActivePanel] = useState("PCC");
@@ -61,7 +61,7 @@ export default function Service() {
             <div className="min-h-screen bg-[#DEEDEF] overflow-hidden">
                 <Header />
                 <div className="pt-16">
-                    <SerCar1 />
+                    <SerCar3 />
 
                     <motion.section
                         initial={{ opacity: 0, y: 50 }}
