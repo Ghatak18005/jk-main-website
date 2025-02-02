@@ -10,6 +10,7 @@ import { useEffect } from "react";
 import Footer from '@/components/Footer';
 import Link from 'next/link';
 
+
 export default function HeroAndAbout() {
   const [ref, inView] = useInView({
     triggerOnce: false,
