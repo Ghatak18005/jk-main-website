@@ -22,8 +22,8 @@ export default async function handler(req, res) {
     `;
 
     await resend.emails.send({
-      from: 'contact@resend.dev',
-      to: 'jkpowersystempvtltd@gmail.com',
+      from: 'contact@contact.jkpowersystem.com',
+      to: ['jkpowersystempvtltd@gmail.com'],
       subject: `New Contact Form Submission from ${companyName}`,
       text: emailContent,
     });
