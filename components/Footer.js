@@ -100,15 +100,20 @@ export default function Footer() {
                   width={24}
                   height={24}
                 />
-                <p className="text-base pl-2 hover:underline hover:text-[#BD7500] cursor-pointer">
+                <a
+                  href="https://www.google.com/maps?q=Office+No:+401+%26+402+Mangla+Trade+Hub,+Nr.+Billabong+School,+Vadsar+Ring+Road,+Vadodara,+Gujarat+390012"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-base pl-2 hover:underline hover:text-[#BD7500] cursor-pointer"
+                >
                   Office No: 401 & 402 Mangla Trade Hub, Nr. Billabong School, Vadsar Ring Road, Vadodara, Gujarat 390012
-                </p>
+                </a>
               </div>
             </div>
 
             <div className="flex-1 mt-8 md:mt-0 md:justify-center w-full h-60">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3692.4127140376154!2d73.16788007474827!3d22.262350844270948!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395fc731ee762685%3A0x7066ca4dd82bd16c!2sMangla%20Trade%20Hub!5e0!3m2!1sen!2sin!4v1736791453900!5m2!1sen!2sin"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3692.412244450939!2d73.16789727497058!3d22.262368644269884!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xa3c2aba329a93e2d%3A0x78ff93a8112ad520!2sJ%20K%20Power%20System%20Pvt%20Ltd!5e0!3m2!1sen!2sin!4v1752561918517!5m2!1sen!2sin"
                 width="600"
                 height="450"
                 style={{ border: 0 }}
