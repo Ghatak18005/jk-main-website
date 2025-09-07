@@ -9,7 +9,7 @@ export default function Certificate() {
   // Dictionary of certificates
   const certificates = [
     {
-      src: "/certificates/c1.png",
+      src: "public/certificates/Screenshot 2025-09-07 134031.png",
       alt: "Certificate 1",
     },
     {
