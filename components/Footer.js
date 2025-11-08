@@ -69,10 +69,10 @@ export default function Footer() {
                   className="mr-3"
                 />
                 <a
-                  href="mailto:jkpowersystempvtltd@gmail.com"
+                  href="mailto:office_vadodara@jkpowersystem.com"
                   className="text-base lg:text-lg hover:underline hover:text-[#BD7500] transition-all duration-300"
                 >
-                  jkpowersystempvtltd@gmail.com
+                  office_vadodara@jkpowersystem.com
                 </a>
               </div>
             </div>
@@ -104,7 +104,7 @@ export default function Footer() {
                   href="https://www.google.com/maps?q=Office+No:+401+%26+402+Mangla+Trade+Hub,+Nr.+Billabong+School,+Vadsar+Ring+Road,+Vadodara,+Gujarat+390012"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-base pl-2 hover:underline hover:text-[#BD7500] cursor-pointer"
+                  className="text-base pl-2 hover:underline hoverj:text-[#BD7500] cursor-pointer"
                 >
                   Office No: 401 & 402 Mangla Trade Hub, Nr. Billabong School, Vadsar Ring Road, Vadodara, Gujarat 390012
                 </a>
